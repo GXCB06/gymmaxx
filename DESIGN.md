@@ -6,6 +6,19 @@ This document is the design source of truth for GymMaxx: who it is for, how user
 
 ---
 
+## 0. Decisions (v1)
+
+| Topic | Decision |
+|---|---|
+| Visual style | **Dark premium** — black background, bold big numbers, one bright accent |
+| Accent colour | **Electric blue** `#3A8BFF` |
+| Main audience | **Mostly men** (Thai, beginners + gym-goers). Women's scan zones possible in a later version |
+| Coach | **Voice coach "Maxx"** — Thai male voice, counts reps, can be muted |
+| Home screen | **Today's workout first**, then streak, calories left, weakest zone |
+| Paywall | **After the free score** — overall score + body type free, breakdown blurred |
+| Body scan | **Front photo only** |
+| Language | **Thai default + English toggle**; exercise names shown in both |
+
 ## 1. Product in one line
 
 **"Whatever your starting point, GymMaxx shows you how to change your body — and lets you see it happen."**
@@ -100,8 +113,8 @@ flowchart TD
 | 8 | Focus areas | Tap zones on a body map: อก, ไหล่, แขน, หน้าท้อง, หลัง, ขา | Multi-select |
 | 9 | Building plan | Animated checklist: "คำนวณแคลอรี่ ✓ เลือกท่าที่เหมาะกับอุปกรณ์ ✓ ..." | 3–4 s, builds anticipation |
 | 10 | Scan prompt | "สแกนร่างกายเพื่อดูจุดแข็งและจุดที่ต้องพัฒนา" · [สแกนเลย] · [ไว้ทีหลัง] | **Skip is a first-class option** |
-| 11 | Privacy + pose | "รูปของคุณจะถูกเก็บไว้ในเครื่องของคุณ ส่งไปวิเคราะห์แล้วลบทันที" · pose tips: same light, shirt off or tight top, arms relaxed | PDPA consent checkbox |
-| 12 | Camera | Body outline overlay, distance indicator, 3-2-1 timer, front photo (back photo optional, unlocks lats/V-taper) | |
+| 11 | Privacy + pose | "รูปของคุณจะถูกเก็บไว้ในเครื่องของคุณ ส่งไปวิเคราะห์แล้วลบทันที" · pose tips: same light, shirt off, arms relaxed at sides | PDPA consent checkbox |
+| 12 | Camera | **One front photo**: body outline overlay (head to hips), distance indicator, 3-2-1 timer, retake button | Mirror selfie or propped phone both work |
 | 13 | Analysing | Scanning line animation over the photo, zones lighting up | 3–5 s |
 | 14 | Result (free) | Overall score (count-up) · body type label · potential score · body-fat range · zone breakdown **blurred** | The aha moment |
 | 15 | Timeline | "~10 สัปดาห์ ถึงเป้าหมาย" + bottleneck (Shred: body fat · Bulk: calories eaten) | Personal, specific, motivating |
@@ -116,10 +129,27 @@ Five tabs. Home sits in the centre.
 | แผนฝึก (Plan) | อาหาร (Food) | **หน้าแรก (Home)** | สแกน (Scan) | ฉัน (Me) |
 |---|---|---|---|---|
 | This week's plan | Calories left ring | Today's workout card | Latest result | Profile + goal |
-| Workout player | Protein / carbs / fat | Streak + badges | Breakdown / Progress toggle | Body stats, weight log |
-| Exercise library | Meals today | Challenges (21/30-day) | Weekly re-scan countdown | Apple Health / Health Connect |
-| Browse by muscle | Thai quick-add | Quick Hits (<15 min) | Compare week 1 vs now | Units, language, mode |
-| Browse by equipment | Eat-more tips (Bulk) | Bottleneck + "Train it" | Share card | Subscription, privacy, delete data |
+| Workout player | Protein / carbs / fat | Streak | Breakdown / Progress toggle | Body stats, weight log |
+| Exercise library | Meals today | Calories left (mini) | Weekly re-scan countdown | Apple Health / Health Connect |
+| Browse by muscle | Thai quick-add | Weakest zone + "Train it" | Compare week 1 vs now | Units, language, mode, coach voice |
+| Browse by equipment | Eat-more tips (Bulk) | Challenges + Quick Hits (below the fold) | Share card | Subscription, privacy, delete data |
+
+### Home layout (top to bottom)
+
+```
+🔥 12 วันติด                          (avatar)
+┌──────────────────────────────────────┐
+│ วันนี้: อก + ไหล่                      │
+│ 6 ท่า · 40 นาที · ยิม                  │
+│ [ ▶ เริ่มเลย ]          (blue, full)  │
+└──────────────────────────────────────┘
+อาหาร: เหลือ 1,240 kcal · โปรตีน 92/140 g
+จุดอ่อน: ไหล่ 55 → [ฝึกเลย]
+สแกนครั้งถัดไป: 3 วัน
+── Challenges · Quick Hits ──
+```
+
+On rest days the workout card becomes "วันพัก" with a 10-minute mobility Quick Hit and the food card moves to the top.
 
 ## 8. Key flows
 
@@ -168,7 +198,26 @@ flowchart LR
 - **Bulk mode** shows "เติมอีก 600 kcal ง่ายๆ" suggestions (e.g. นมจืด + กล้วย, ข้าวมันไก่ + ไข่).
 - **Shred mode** shows lighter swaps (e.g. ข้าวกะเพรา → ขอข้าวครึ่งเดียว).
 
-### 8.4 Weekly re-scan
+### 8.4 Scan result (front photo)
+
+```
+WEEK 1 · 1 SCAN                     ⏱ 6d 23h
+สแกนร่างกาย         [ ความคืบหน้า | รายละเอียด ]
+                  ( photo in blue ring )
+                         64
+               คะแนนรวม · ศักยภาพ 86
+      ┌────────────────┬────────────────┐
+      │ ผอมแต่มีพุง      │ ไขมัน 18–22%    │
+      └────────────────┴────────────────┘
+  อก (Chest)        62    ไหล่ (Shoulders) ● 55
+  แขน (Arms)        60    หน้าท้อง (Abs)     58
+  V-Taper          57    สมมาตร (Symmetry)  81
+            [ ฝึกจุดอ่อน: ไหล่ → ]
+```
+
+Zones scored from the front photo: **chest, shoulders, arms, abs, V-taper** (shoulder-to-waist ratio) and **symmetry**. Back muscles are trained in the plan but not scored in v1. In Bulk mode the zone scores emphasise size; in Shred mode, definition. Free users see the overall score, body type, potential and body-fat range; zone scores are blurred until Pro.
+
+### 8.5 Weekly re-scan
 
 Countdown ends → push notification → same pose outline as week 1 (ghost overlay of last photo) → result with deltas per zone (▲ +3) → Progress tab shows week 1 vs now side by side → optional share card (photo can be blurred or hidden; scores only).
 
@@ -192,7 +241,7 @@ Rules:
 
 ### 10.1 Direction
 
-Dark, premium, energetic — the "maxxing" look users expect — but warmer and less intimidating than AbMaxx: real Thai bodies at mixed fitness levels, rounded shapes, friendly copy.
+Dark, premium, energetic — the "maxxing" look users expect. Electric blue is the single action colour. Because AbMaxx also uses blue, GymMaxx sets itself apart through Thai copy, Thai male models at mixed fitness levels (not only shredded), rounded shapes and the Kanit display font.
 
 ### 10.2 Colour tokens (dark theme, v1 is dark-only)
 
@@ -210,12 +259,14 @@ Dark, premium, energetic — the "maxxing" look users expect — but warmer and 
   --text-faint:    #63686F;
 
   /* brand / actions */
-  --primary:       #D4FF3A;  /* volt — main buttons, active tab */
-  --on-primary:    #0B0B0D;
+  --accent:        #3A8BFF;  /* electric blue — links, active tab, rings, highlights on dark */
+  --primary:       #2563EB;  /* button fill (deeper blue so white text passes AA) */
+  --on-primary:    #FFFFFF;
+  --primary-press: #1D4ED8;
 
-  /* goal modes */
-  --mode-shred:    #3AD6FF;  /* cyan — Shred accents */
-  --mode-bulk:     #FF8A3A;  /* orange — Bulk accents */
+  /* goal modes (badges and timeline only, never buttons) */
+  --mode-shred:    #FF8A3A;  /* orange — Shred */
+  --mode-bulk:     #A78BFA;  /* violet — Bulk */
 
   /* score scale */
   --score-high:    #34D399;  /* ≥ 80 */
@@ -224,7 +275,7 @@ Dark, premium, energetic — the "maxxing" look users expect — but warmer and 
 }
 ```
 
-Text on `--bg` and `--surface-1` must meet WCAG AA (4.5:1). Score colour is never the only signal — always paired with the number.
+Text on `--bg` and `--surface-1` must meet WCAG AA (4.5:1). `#3A8BFF` on `--bg` passes (≈ 5.9:1), but white text on `#3A8BFF` does not (≈ 3.3:1) — so filled buttons use `--primary` `#2563EB` (≈ 5.2:1 with white). Score colour is never the only signal — always paired with the number.
 
 ### 10.3 Typography
 
@@ -259,7 +310,7 @@ Button (primary / secondary / ghost) · Chip · Card · Score ring · Zone score
 ### 10.7 Imagery
 
 - Exercise demos: free-exercise-db start/end photos as a looping 2-frame animation for v1; licensed GIFs or reviewed AI clips later (see research notes).
-- Avoid only shredded models. Show a range of Thai bodies, including beginners.
+- Avoid only shredded models. Show a range of Thai male bodies — skinny, skinny-fat, overweight beginners — not only athletes.
 - Icons: one consistent outline set (e.g. Lucide or Phosphor), 24 px, 1.75 stroke.
 
 ## 11. Voice & copy
@@ -274,7 +325,14 @@ Tone: a friendly gym buddy — casual Thai (เป็นกันเอง), enc
 
 Body-type labels: **ผอม** (Skinny) · **ผอมแต่มีพุง** (Skinny-fat) · **สมส่วน** (Lean) · **ทรง V** (V-Shape) · **ไขมันสะสม** (Higher body fat).
 
-Coach "Maxx" lines: "พร้อมยัง? เดี๋ยวนับให้ทุกครั้ง" · "อีก 3 ครั้ง!" · "พัก 90 วินาที ดื่มน้ำก่อน" · "จุดอ่อนวันนี้คือไหล่ ไปลุยกัน".
+### Coach "Maxx"
+
+- Thai male voice (pre-generated TTS clips, so it works offline); English voice when the app language is English.
+- Personality: big-brother gym buddy — warm, upbeat, uses the user's nickname, never yells or insults.
+- Speaks at: workout start, each rep count (optional), last 3 reps, rest start / 10 s left, new PR, workout finished.
+- Settings: voice on / off, rep counting on / off, volume ducks music instead of stopping it.
+
+Sample lines: "พร้อมยัง? เดี๋ยวนับให้ทุกครั้ง" · "อีก 3 ครั้ง!" · "พัก 90 วินาที ดื่มน้ำก่อน" · "เหลือ 10 วิ เตรียมตัว" · "สถิติใหม่! เก่งมาก" · "จุดอ่อนวันนี้คือไหล่ ไปลุยกัน".
 
 ## 12. Accessibility, localisation, privacy
 
