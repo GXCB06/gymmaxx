@@ -256,8 +256,23 @@ After prototype review the UI moves to **iOS-native patterns** (Human Interface 
   - slide transitions between onboarding steps
 - **Onboarding in 19 steps, one question per screen:** welcome → goal → weak-spot insight → age → height → weight → experience → where you train → equipment → **days per week (asked as a count; the app picks the days, which can be changed on the plan screen)** → minutes per session → nickname → building-your-plan loader → plan reveal (timeline) → projected progress chart → scan intro → camera → result → paywall. Never combine questions on one screen.
 - **Option rows:** an icon, a title and a one-line description, with a radio on the right. The whole row turns solid blue when selected. The Continue pill stays disabled until the user picks. Goals use plain words, not jargon: "ลดพุง ลดไขมัน" (lose belly, lose fat), "เพิ่มกล้าม ตัวใหญ่ขึ้น" (build muscle, get bigger), "ลดไขมัน และเพิ่มกล้าม" (lose fat and build muscle), "แข็งแรงขึ้น สุขภาพดี" (get stronger, be healthier).
-- **Equipment:** a 2-column grid of picture tiles. Each has a line drawing, a Thai name and a one-line explanation, so beginners who don't know equipment names can recognise it.
-- **Main app tabs:** หน้าแรก (Home) · ฝึก (Train) · อาหาร (Food) · ความคืบหน้า (Progress). Settings and the profile live behind the gear icon on Home.
+- **Equipment:** **real photos**, grouped like a gym is laid out: small weights · bars & plates · benches & racks · cables & machines · bands. Each row shows the photo, the Thai name, the English name with a one-line explanation, and a checkbox. It has All / Selected tabs and "select all" per group. Gym users start with everything ticked; home users start empty.
+- **Main app tabs:** หน้าแรก (Home) · ฝึก (Train) · **[สแกน (Scan), a raised center button]** · อาหาร (Food) · ความคืบหน้า (Progress). The profile sits behind the avatar on Home.
+- **Home, top to bottom:**
+  - GymMaxx wordmark + **streak pill** (flame + days). Tapping it opens a streak sheet with this week's flames, the best streak, and the rule: train or log food once a day.
+  - Week strip: done days get an orange ring, today a white ring.
+  - **Today's workout card with a big "เริ่มออกกำลังกาย" (start workout) button, always the first thing on screen.**
+  - Calories-left card with a ring.
+  - Three macro-left cards.
+  - Body score row.
+  - Recent activity.
+  - There's no date header; the week strip does that job.
+- **Scan (center tab):** one camera for everything.
+  - Default mode is **"AI อัตโนมัติ" (AI auto)**: the AI detects whether it's looking at food, a body or a barcode and says so before you shoot. Manual modes: อาหาร (food) · ร่างกาย (body) · บาร์โค้ด (barcode).
+  - If a manual mode doesn't match what's in frame, the app offers to switch.
+  - **Food result:** dish name, AI confidence, kcal, P/C/F, a portion picker and a "บันทึกมื้อนี้" (log this meal) button, which adds it to Food.
+  - **Body result:** the new score and change, plus "ดูผลละเอียด" (see full results), which goes to Progress.
+- **Food (calorie-tracker style):** big calories-left number with a ring, macro-left cards with rings, a coach tip, "สแกนอาหาร" (scan food) / "เลือกเมนูไทย" (pick a Thai dish), and today's log with dish thumbnails, time, kcal and an "สแกน AI" (AI scan) tag.
 - **Workout player:** an overview with a big elapsed timer → a logging screen per exercise (demo header, reps and kg input boxes, "log set") → a rest bottom sheet (−10/+10, pause, done) → a finish screen with confetti, trained muscles, PRs and a share card.
 - **Onboarding is one flow with shared state.** Answers feed the plan summary (calories, protein, weekly split) and the scan result (body type, body-fat range, timeline). They're saved on finish so Home and Food use the same targets. Tapping a summary row jumps back to edit that answer.
 
