@@ -254,6 +254,7 @@ After prototype review the UI moves to **iOS-native patterns** (Human Interface 
   - scroll-wheel pickers for age and height, and a horizontal ruler for weight
   - bottom sheets with a grabber
   - slide transitions between onboarding steps
+- **One question per screen, 9 questions:** goal → age → height → weight → experience → where you train → equipment → training days → minutes per session. Never combine questions on one screen.
 - **Onboarding is one flow with shared state.** Answers feed the plan summary (calories, protein, weekly split) and the scan result (body type, body-fat range, timeline). They're saved on finish so Home and Food use the same targets. Tapping a summary row jumps back to edit that answer.
 
 ### 10.1 Direction
