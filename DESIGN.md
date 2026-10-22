@@ -105,8 +105,9 @@ flowchart TD
 |---|---|---|---|
 | 1 | Welcome | "เปลี่ยนหุ่นให้เห็นผล ไม่ว่าจะเริ่มจากตรงไหน" · [เริ่มเลย] · Sign in | Short looping clip of a Thai body transformation |
 | 2 | Goal | "เป้าหมายของคุณคืออะไร?" · **ลดไขมัน ให้กล้ามชัด** (Shred) · **เพิ่มกล้าม เพิ่มน้ำหนัก** (Bulk) · **ลดไขมันและเพิ่มกล้ามไปพร้อมกัน** (Both) | Sets mode + accent colour for the whole app |
-| 3 | Sex + age | Two pickers | Needed for calorie maths |
-| 4 | Height + weight | Wheel pickers, cm / kg | |
+| 3 | Age | "อายุเท่าไหร่?" · iOS-style scroll wheel (15–70), selection band in the centre | One question per screen; calorie maths |
+| 4 | Height | "สูงเท่าไหร่?" · scroll wheel (140–210 cm) with segmented control ซม. / ฟุต-นิ้ว | |
+| 4b | Weight | "น้ำหนักตอนนี้?" · big number + horizontal ruler you swipe (0.5 kg steps), segmented กก. / ปอนด์, mode-specific tip | |
 | 5 | Experience | "เคยเล่นเวทมาก่อนไหม?" · ไม่เคยเลย · เคยบ้าง (ไม่ถึง 6 เดือน) · เล่นประจำ | Controls exercise difficulty |
 | 6 | Where + equipment | ฟิตเนส / ที่บ้าน / ทั้งสองที่ → equipment checklist with icons (dumbbells, bench, cable, machines, pull-up bar, bands, none) | Feeds the "do with what we have" filter |
 | 7 | Schedule | Days per week (2–6) · minutes per session (20 / 40 / 60) | |
