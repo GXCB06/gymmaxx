@@ -27,7 +27,7 @@
 | Layer | Choice | Why |
 |---|---|---|
 | App | **Expo (React Native) + TypeScript**, Expo Router | One codebase for iOS + Android, fast iteration, OTA updates |
-| UI | Custom components on design tokens from DESIGN.md; React Native Reanimated; react-native-svg (muscle map) | Matches the dark premium design, smooth score/scan animations |
+| UI | Custom components on design tokens from DESIGN.md; React Native Reanimated; muscle map from **react-native-body-highlighter** (MIT, anatomical front/back male body, per-muscle colouring) on react-native-svg | Matches the dark premium design, smooth score/scan animations |
 | Fonts | Kanit, IBM Plex Sans Thai, Barlow Condensed (Google Fonts) | Full Thai support, free |
 | Local data | SQLite (expo-sqlite) | Offline workouts, library and food log |
 | Backend | **Supabase** — Auth, Postgres (RLS), Storage, Edge Functions | Managed, quick to build, row-level security for user data |

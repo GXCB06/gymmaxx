@@ -46,6 +46,9 @@ MAIN APP — bottom tabs: แผนฝึก | อาหาร | หน้าแ
 - Scan: header "WEEK n · n SCANS", countdown to next scan (1 scan per 7 days), toggle ความคืบหน้า / รายละเอียด. Breakdown: score ring, body type, body-fat range, 6 zone bars with weakest marked, link to train it. Progress: week 1 vs latest side by side, per-zone deltas, weight and strength deltas, share card (photo can be hidden).
 - Me: profile, goal/mode switch (Shred/Bulk changes calorie target, copy, and mode badge color), equipment, language toggle, coach voice on/off, subscription (with clear cancel instructions), privacy (delete all photos).
 
+MUSCLE MAP
+Use an anatomical front/back male body (grey silhouette, individual muscle shapes like Fitbod's recovery map), not simple blocks. Take the SVG path data from the MIT-licensed react-native-body-highlighter (https://github.com/HichamELBSI/react-native-body-highlighter, files assets/bodyFront.ts, assets/bodyBack.ts and the outline paths in components/SvgMaleWrapper.tsx; viewBox front "0 0 724 1448", back "724 0 724 1448") and render it with plain React SVG in a reusable <BodyMap side highlights={{slug: color}} /> component. Base muscle fill #43464E, silhouette #1F2125 with #34373E outline. Keep the MIT license notice in the app's licenses screen. Use it on Welcome, Exercise detail (primary #3A8BFF, secondary #3A8BFF66, front + back), Workout summary (muscles trained today), Scan breakdown (each muscle coloured by its zone score), and make it tappable in the library to filter exercises by muscle.
+
 EXERCISE DATA
 Load exercises from the public-domain free-exercise-db:
 https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/dist/exercises.json

@@ -298,7 +298,7 @@ All three are free Google Fonts with full Thai support (Barlow is Latin, used on
 
 ### 10.5 Core components
 
-Button (primary / secondary / ghost) · Chip · Card · Score ring · Zone score bar · Muscle map (front/back SVG, primary/secondary highlight) · Exercise card · Set row (kg × reps, ✓) · Rest timer · Macro ring · Food item + portion picker · Streak flame · Badge · Countdown pill · Paywall plan card · Bottom sheet · Toast.
+Button (primary / secondary / ghost) · Chip · Card · Score ring · Zone score bar · Muscle map (anatomical front/back male body from react-native-body-highlighter, MIT — grey silhouette, each muscle coloured by state: primary/secondary for exercises, score colour for scans, trained-today on summaries) · Exercise card · Set row (kg × reps, ✓) · Rest timer · Macro ring · Food item + portion picker · Streak flame · Badge · Countdown pill · Paywall plan card · Bottom sheet · Toast.
 
 ### 10.6 Motion & feedback
 
