@@ -66,7 +66,7 @@ Re-scan is limited to **once every 7 days** (countdown on the Scan tab). This cr
 | **2. Install & open** | "Is this another English app?" | Store page, splash | Unsure | Bounce | Thai screenshots, Thai first screen |
 | **3. Onboarding** | "Get to the point" | 10–12 quick questions | Engaged → impatient | Too long (AbMaxx review: "took a while") | Progress bar, one tap per screen, ~90 seconds total |
 | **4. First scan (aha)** | "What's my score?" | Camera + result | Excited / nervous | Low score → quits, body shame | Scan is optional; show *potential* next to score; kind body-type labels |
-| **5. Paywall** | "Is this worth it?" | Paywall + one exit offer | Sceptical | Fake discount → "scam" review | Price in ฿ with monthly equivalent, honest %, free tier still useful |
+| **5. Paywall** | "Is this worth it?" | Paywall (close = free tier, no exit offer) | Sceptical | Fake discount → "scam" review | Price in ฿ with monthly equivalent, honest %, free tier still useful |
 | **6. First workout** | "How do I use this machine?" | Workout player | Unsure → proud | Confusion, timer stops | Demo on every move, background timer, finish badge |
 | **7. Week 1** | "Am I doing enough?" | Home, food log, streak | Motivated | Food logging friction | Thai quick-add with portions, daily target ring |
 | **8. Week 2 re-scan** | "Did anything change?" | Compare view | Proud (or flat) | No visible change → churn | Show strength, waist and weight wins too, not only the photo score |
@@ -95,7 +95,7 @@ flowchart TD
     N --> P[15 Goal timeline]
     O --> P
     P --> Q[16 Paywall]
-    Q -->|Close| R[17 One honest exit offer]
+    Q -->|Close| R[17 Free tier, no exit offer]
     Q --> S[18 Notifications permission]
     R --> S
     S --> T[Home]
@@ -105,7 +105,7 @@ flowchart TD
 |---|---|---|---|
 | 1 | Welcome | "เปลี่ยนหุ่นให้เห็นผล ไม่ว่าจะเริ่มจากตรงไหน" · [เริ่มเลย] · Sign in | Short looping clip of a Thai body transformation |
 | 2 | Goal | "เป้าหมายของคุณคืออะไร?" · **ลดไขมัน ให้กล้ามชัด** (Shred) · **เพิ่มกล้าม เพิ่มน้ำหนัก** (Bulk) · **ลดไขมันและเพิ่มกล้ามไปพร้อมกัน** (Both) | Sets mode + accent colour for the whole app |
-| 3 | Age | "อายุเท่าไหร่?" · iOS-style scroll wheel (15–70), selection band in the centre | One question per screen; calorie maths |
+| 3 | Age | "อายุเท่าไหร่?" · iOS-style scroll wheel (18–80, starts at 25; GymMaxx is 18+ because of body photos), selection band in the centre | One question per screen; calorie maths |
 | 4 | Height | "สูงเท่าไหร่?" · scroll wheel (140–210 cm) with segmented control ซม. / ฟุต-นิ้ว | |
 | 4b | Weight | "น้ำหนักตอนนี้?" · big number + horizontal ruler you swipe (0.5 kg steps), segmented กก. / ปอนด์, mode-specific tip | |
 | 5 | Experience | "เคยเล่นเวทมาก่อนไหม?" · ไม่เคยเลย · เคยบ้าง (ไม่ถึง 6 เดือน) · เล่นประจำ | Controls exercise difficulty |
@@ -234,7 +234,7 @@ Countdown ends → push notification → same pose outline as week 1 (ghost over
 Rules:
 - Prices in **฿** with the monthly equivalent ("≈ ฿99/เดือน").
 - Any "% off" is calculated against a price shown on the same or previous screen.
-- One exit offer, once. No fake countdowns.
+- No exit offer: closing the paywall goes straight to the free tier. No fake countdowns. The auto-renew price and how to cancel are always shown above the button (App Store 3.1.2).
 - Cancel instructions are one tap away in Me → Subscription.
 - Prices are hypotheses to test (e.g. ฿199/month, ฿1,190/year).
 
@@ -265,15 +265,15 @@ After prototype review the UI moves to **iOS-native patterns** (Human Interface 
   - a one-line caption saying why (scan finds the weak spot, targeted exercises and Thai food, staying consistent)
   - **the "2X" figure is a placeholder. Before launch, back it with our own data (e.g. score gain per week for active users vs a baseline) or replace it with a claim we can prove. App Store rules and Thai consumer-protection advertising rules require that.**
 - **Option rows:** an icon, a title and a one-line description, with a radio on the right. The whole row turns solid blue when selected. The Continue pill stays disabled until the user picks. Goals use plain words, not jargon: "ลดพุง ลดไขมัน" (lose belly, lose fat), "เพิ่มกล้าม ตัวใหญ่ขึ้น" (build muscle, get bigger), "ลดไขมัน และเพิ่มกล้าม" (lose fat and build muscle), "แข็งแรงขึ้น สุขภาพดี" (get stronger, be healthier). The plan for that goal is called "แผนฟิตหุ่นของ…" (…'s fit-body plan).
-- **Equipment:** **real photos** in a list, grouped like a gym is laid out: small weights · bars & plates · benches & racks · cables & machines · bands. Group names are large bold headers. Each row shows a square **equipment-only image** (just the item on a light tile, no person, like Fitbod; the prototype uses the SVG illustrations in `design/equipment/`), the Thai name, the English name with a one-line explanation, and a checkbox. Tabs: ใช้บ่อย (most used) / ทั้งหมด (all) / เลือกแล้ว (selected), plus "select all" per group. A **"ค้นหาอุปกรณ์" (search equipment)** pill sits above the Continue button, like Fitbod. It opens a full-screen search with a text field and a category list (icon, name, how many are selected, chevron). Tapping a category opens its items with "select all". Typing matches Thai names, English names and nicknames (e.g. "bench", "ดัมเบล", "lat pulldown"). If nothing matches, it suggests trying the English name or browsing by category. Next to search, **"ไม่แน่ใจ? เลือกให้" (not sure? pick for me)** fills in the popular set for where they train and moves on. At a gym that's most machines, at home it's dumbbells and a band. The plan screen then says the equipment was picked for them and can be changed in the profile. Gym users start with everything ticked; home users start empty.
-- **Main app tabs:** a **floating pill tab bar** (inset 12 px from the screen edges, 18 px from the bottom) holding หน้าแรก (Home) · ฝึก (Train) · อาหาร (Food) · ความคืบหน้า (Progress). The selected tab gets a soft filled pill. **Scan is a separate round 64 px button to the right of the pill**, so it's always one tap away. The profile sits behind the avatar on Home.
-- **Theme:** dark is the default. A **light option** modelled on Cal AI's clean home (off-white `#F4F3F7` ground, white cards with a soft shadow, near-black text, a black scan button) is built from the same token set (`.gx.light`), so any screen can switch by overriding tokens. The light Home is in the prototype for side-by-side comparison.
+- **Equipment:** **real photos** in a list, grouped like a gym is laid out: small weights · bars & plates · benches & racks · cables & machines · bands. Group names are large bold headers. Each row shows a square **equipment-only image** (just the item on a light tile, no person, like Fitbod; the prototype uses the SVG illustrations in `design/equipment/`), the Thai name, the English name with a one-line explanation, and a checkbox. Tabs: ยอดนิยม (popular) / ทั้งหมด (all) / เลือกแล้ว (selected), plus "select all" per group. A **"ค้นหาอุปกรณ์" (search equipment)** pill sits above the Continue button, like Fitbod. It opens a full-screen search with a text field and a category list (icon, name, how many are selected, chevron). Tapping a category opens its items with "select all". Typing matches Thai names, English names and nicknames (e.g. "bench", "ดัมเบล", "lat pulldown"). If nothing matches, it suggests trying the English name or browsing by category. Next to search, **"ไม่แน่ใจ? เลือกให้" (not sure? pick for me)** fills in the popular set for where they train and moves on. At a gym that's most machines, at home it's dumbbells and a band. The plan screen then says the equipment was picked for them and can be changed in the profile. Gym users start with everything ticked; home users start empty.
+- **Main app tabs:** a **floating pill tab bar** (inset 12 px from the screen edges, 18 px from the bottom) holding หน้าแรก (Home) · ฝึก (Train) · อาหาร (Food) · ผลสแกน (Scan results, same word as that screen's title). The selected tab gets a soft filled pill. **Scan is a separate round 64 px button to the right of the pill**, so it's always one tap away. The profile sits behind the avatar on Home.
+- **Theme:** dark is the default. Every screen also supports light (Cal AI-like: off-white `#F4F3F7` ground, white cards with a soft shadow, near-black text, a black scan button) through the same tokens (`.gx.light`). Users pick มืด (dark) / สว่าง (light) / ตามเครื่อง (follow phone) in Profile, and the choice applies everywhere at once. The camera always stays dark.
 - **Home, top to bottom:**
   - GymMaxx wordmark + **streak pill** (flame + days). Tapping it opens a streak sheet with this week's flames, the best streak, and the rule: train or log food once a day.
   - Week strip: done days get an orange ring, today a white ring.
   - **Today's workout card with a big "เริ่มออกกำลังกาย" (start workout) button, always the first thing on screen.**
   - Swipeable pages with dots (Cal AI pattern):
-    - page 1: calories-left card (big number, ring with a flame) and three macro-left cards, each with an icon in its ring (protein drumstick red, carbs wheat orange, fat droplet blue). These macro colours are used everywhere (Home, Food, scan results). When a macro goes over target, the card says "เกิน" (over) with the amount instead of showing 0.
+    - page 1: calories-left card (big number, ring with a flame) and three macro-left cards, each with an icon in its ring (protein violet `#A78BFA`, carbs teal `#2DD4BF`, fat pink `#F472B6`; macro colours never reuse warning red, streak orange or action blue). These macro colours are used everywhere (Home, Food, scan results). When a macro goes over target, the card says "เกิน" (over) with the amount instead of showing 0.
     - page 2: body score and weight
   - Recent activity.
   - There's no date header; the week strip does that job.
@@ -296,6 +296,60 @@ After prototype review the UI moves to **iOS-native patterns** (Human Interface 
 - **Food (calorie-tracker style):** big calories-left number with a ring, macro-left cards with rings, a coach tip, "สแกนอาหาร" (scan food) / "เลือกเมนูไทย" (pick a Thai dish), and today's log with dish thumbnails, time, kcal and an "สแกน AI" (AI scan) tag.
 - **Workout player:** an overview with a big elapsed timer → a logging screen per exercise (demo header, reps and kg input boxes, "log set") → a rest bottom sheet (−10/+10, pause, done) → a finish screen with confetti, trained muscles, PRs and a share card.
 - **Onboarding is one flow with shared state.** Answers feed the plan summary (calories, protein, weekly split) and the scan result (body type, body-fat range, timeline). They're saved on finish so Home and Food use the same targets. Tapping a summary row jumps back to edit that answer.
+
+### 10.0b Audit fixes (Oct 2026) — rules that now apply everywhere
+
+**Trust and legal**
+- **18+ only.** Age wheel starts at 18. Body photos of minors are out of scope.
+- **Body photo you can take alone.** Scan intro adds "พิงมือถือกับผนัง ถอยหลัง 2 ก้าว" (lean the phone on a wall, step back 2 paces). The camera first checks pose and light (amber) before showing ready (green). It has a 3 / 5 / 10 s timer (default 10) with a voice countdown. Body scans from the Scan tab use the same 10 s countdown.
+- **We only score what the camera sees.** The front photo scores front zones. The back map shows "เพิ่มรูปด้านหลัง" (add a back photo) until a back photo exists.
+- **Every estimate links to "วิธีคำนวณ" (how we calculate).** This covers the 2X insight, the projection chart, the score and body fat ("ไขมัน (ประมาณ)", ±4%). The 2X stays a placeholder until real cohort data replaces it.
+- **Consent is a real checkbox** with plain wording and a policy link, plus "ใส่เสื้อรัดรูปได้" (a fitted shirt is fine).
+- **Profile** (from the Home avatar):
+  - edit goal, days, minutes, place and equipment
+  - weight units; notifications; theme
+  - subscription (auto-renew date, how to cancel), restore purchase
+  - how scores are calculated
+  - download my data, delete scan photos, delete account (within 30 days, PDPA)
+
+**Flows**
+- **Progress bar** covers the whole onboarding flow, so it no longer fills up early.
+- **Streak:** training *or* logging food counts. Today with meals logged shows as done. A finished workout doesn't add a second day.
+- **One week strip everywhere** (Home, Train, streak sheet):
+  - done = orange ring
+  - missed = dashed
+  - future = faint
+  - today = raised
+  - blue dot = planned workout day
+  - legend in the streak sheet and on Train
+- **Home vs Train:** Home starts today's workout. Train ("แผนสัปดาห์นี้", this week's plan) owns the week: 7-day schedule (done / today / rest), today's exercises with swap, and the library. Library muscle groups use exercise photos, not body-map icons.
+- **Workout logging:**
+  - big −/+ steppers for reps and kg (±2.5 kg); no free-text inputs
+  - "ข้ามเซ็ตนี้" (skip set) replaces "log all sets"
+  - Maxx speaks in one line
+  - overview's primary button is "เริ่ม / ทำต่อ: <next exercise>" (start / continue); ending early is a secondary link with a confirmation sheet
+  - the close button is neutral, not red
+- **Food:**
+  - "ค้นหาเมนู" (search dishes) with recent / favourite / all tabs, Thai and English search, ~25 Thai dishes
+  - tap a logged meal to change the portion or delete it
+  - scan results offer "ไม่ใช่เมนูนี้?" (not this dish?) with similar dishes and a search link
+- **Empty and error states:**
+  - first-day Home (HomeNew board): 0 streak, full calories, "สแกนมื้อแรก" (scan your first meal), notification card leading to a pre-permission sheet (max 2 a day)
+  - empty food log
+  - failed scan (dark or blurry, with tips)
+  - offline (photo kept, analysed when back online)
+
+**Visual**
+- **No letter-spacing on Thai.** `.gx-eyebrow` is 0; Latin-only labels add `.gx-latin`.
+- **Floating tab bar** has a fade behind it, so content never shows around it. Inactive labels use `--t2` for contrast.
+- **Chip rows wrap**, never clip.
+- **Copy and units:**
+  - "แคลอรี" (not แคลอรี่), "เวิร์กเอาต์"
+  - numbers + "kcal"; grams "20 ก." with a space; kg "กก."
+  - Thai dates and durations ("สัปดาห์ที่ 3", "อีก 3 วัน 4 ชม."); no "WEEK" or "3d 4h"
+  - plain words instead of jargon ("กก. ที่ยกรวม" total kg lifted, "ยกหนักขึ้น" lifted heavier, "เป้าวันนี้ 2,750 kcal" today's target 2,750 kcal)
+- **Accessibility:** `--t3` raised to `#8A909B` (dark) / `#6E6E78` (light) so small text passes 4.5:1. Tap targets ≥ 44 pt.
+- **Dynamic Type in the app:** the prototype uses fixed px. The app must map sizes to iOS text styles / Android sp, and layouts must reflow at the largest accessibility size.
 
 ### 10.1 Direction
 
