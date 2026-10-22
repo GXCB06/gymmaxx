@@ -240,6 +240,22 @@ Rules:
 
 ## 10. Visual design system
 
+### 10.0 Update — iOS-native (supersedes 10.2–10.4 where they differ)
+
+After prototype review the UI moves to **iOS-native patterns** (Human Interface Guidelines):
+
+- **Type:** the system font: SF Pro and *Sukhumvit Set* for Thai on iPhone, Roboto and Noto Sans Thai on Android, Noto Sans Thai as the web fallback. Numbers use SF Pro Rounded (`ui-rounded`), with Nunito as the fallback. Large titles are 32–34 pt bold, body text 17 pt, footnotes 13 pt.
+- **Colour:** Apple's dark system palette: background `#000000`, grouped surfaces `#1C1C1E` and `#2C2C2E`, separators `#38383A`, secondary text `#A1A1AA`. Blue `#3A8BFF` stays the accent, and filled buttons stay `#2563EB` with white text. Semantic colours use iOS system values: green `#30D158`, yellow `#FFD60A`, red `#FF453A`. Mode colours are Shred orange `#FF9F0A`, Bulk purple `#BF5AF2` and Recomp blue.
+- **Components:**
+  - navigation bar with a "‹ ย้อนกลับ" back button and a large title underneath
+  - grouped inset lists with inset separators, not bordered cards
+  - iOS switches for on/off settings
+  - segmented controls (grey selected pill)
+  - scroll-wheel pickers for age and height, and a horizontal ruler for weight
+  - bottom sheets with a grabber
+  - slide transitions between onboarding steps
+- **Onboarding is one flow with shared state.** Answers feed the plan summary (calories, protein, weekly split) and the scan result (body type, body-fat range, timeline). They're saved on finish so Home and Food use the same targets. Tapping a summary row jumps back to edit that answer.
+
 ### 10.1 Direction
 
 Dark, premium, energetic — the "maxxing" look users expect. Electric blue is the single action colour. Because AbMaxx also uses blue, GymMaxx sets itself apart through Thai copy, Thai male models at mixed fitness levels (not only shredded), rounded shapes and the Kanit display font.
