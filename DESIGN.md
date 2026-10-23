@@ -351,6 +351,32 @@ After prototype review the UI moves to **iOS-native patterns** (Human Interface 
 - **Accessibility:** `--t3` raised to `#8A909B` (dark) / `#6E6E78` (light) so small text passes 4.5:1. Tap targets ≥ 44 pt.
 - **Dynamic Type in the app:** the prototype uses fixed px. The app must map sizes to iOS text styles / Android sp, and layouts must reflow at the largest accessibility size.
 
+### 10.0c Competitor-review round (Fitbod, SmartGym, Ladder — Oct 2026)
+
+Adopted after reviewing their store pages and reviews. Human coaches and community, and Android vs iOS integrations, are on hold.
+
+- **Free trial:** 7 days, yearly plan only, with the honest 3-step timeline on the paywall (today / reminder on day 5 / charge on day 7). Profile shows "ทดลองฟรี · เหลือ 7 วัน" (free trial · 7 days left) and how to cancel.
+- **"ปรับวันนี้" (adjust today)**, from the Home hero, for today only:
+  - time: 20 / 30 / 45 / 60 min, which sets the number of exercises
+  - equipment today: as planned / dumbbells only / none
+  - sore spots: chest, shoulders, back, arms, legs, abs; Maxx avoids them and re-picks the focus
+  - with a "see a doctor if it's sharp pain" note and a live preview of the change
+  - the hero then shows "ปรับแล้ว · เฉพาะวันนี้" (adjusted · today only), with a way to revert
+- **Streak freeze and pause** (Fitbod "vacation mode" request):
+  - 2 freezes a month, used automatically on a missed day; the day shows as ice-blue "ใช้ตัวช่วย" (freeze used) in every week strip and legend
+  - "พักสถิติชั่วคราว" (pause streak) for 3, 7 or 14 days (travel, sick, exams): no workout reminders, and the streak neither breaks nor grows; the pill shows "พัก" (paused)
+- **Muscle recovery** on Train ("ความพร้อมของกล้าม", muscle readiness):
+  - front and back body maps: green = ready, yellow = nearly, red = recovering
+  - % bars per group, and one line explaining why today's plan avoids the recovering muscles
+- **Strength progress** on ผลสแกน (scan results) → ความคืบหน้า (progress), placed above the body section:
+  - workouts this month, total kg lifted, personal records
+  - a weekly best-set chart per exercise with the record marked
+- **Data you can trust and fix:**
+  - an outlier (e.g. squat 200 kg among ~55 kg weeks) is flagged in orange with "แก้เป็น…" (fix to…) / "ถูกต้องแล้ว" (it's correct)
+  - flagged values don't count as a best until confirmed
+  - logged sets reopen with a tap on their ✓ in the workout
+  - the Summary has "แก้ไข" (edit) per exercise: steppers and delete per set; charts recalculate
+
 ### 10.1 Direction
 
 Dark, premium, energetic — the "maxxing" look users expect. Electric blue is the single action colour. Because AbMaxx also uses blue, GymMaxx sets itself apart through Thai copy, Thai male models at mixed fitness levels (not only shredded), rounded shapes and the Kanit display font.

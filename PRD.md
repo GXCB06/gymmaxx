@@ -158,6 +158,7 @@ Priority: **P0** = required for launch · **P1** = launch if ready, else first u
 | F8.2 | Pro: zone breakdown, adaptive plan, weekly re-scans + compare, coach voice, challenges, smart food tips. |
 | F8.3 | Paywall appears after the free score; zone breakdown is shown blurred behind it. |
 | F8.4 | Prices in ฿ with monthly equivalent. Initial hypothesis: ฿199/month, ฿1,190/year — to be tested. |
+| F8.5 | **7-day free trial on the yearly plan only** (decided Oct 2026). The paywall shows a 3-step timeline: today, everything unlocked and no charge → day 5, we send a reminder → day 7, charge ฿1,190 unless cancelled. The monthly plan has no trial. Profile shows the days left and the charge date. |
 | F8.5 | One exit offer, shown once; any "% off" is calculated against a price shown on screen. No fake timers. |
 | F8.6 | Restore purchases and clear cancel instructions in Me → Subscription. |
 
@@ -219,7 +220,7 @@ Priority: **P0** = required for launch · **P1** = launch if ready, else first u
 
 ## 11. Open questions
 
-1. Final pricing and whether to offer a free trial in addition to the free score.
+1. Final pricing. (Trial decided: 7 days on yearly; see F8.5.)
 2. Which AI approach gives the most consistent scan scores at acceptable cost?
 3. Source and licence for the Thai food nutrition dataset.
 4. Creator partner: who, and equity vs revenue share?
