@@ -382,7 +382,7 @@ Adopted after reviewing their store pages and reviews. Human coaches and communi
 Core job: open the app and know which exercises, how many sets × reps, what weight, what equipment and what time to go to the gym, then repeat a locked plan every week.
 
 - **วันนี้ (Today, Home):**
-  - **the top shows the streak, never a date or weekday:** flame tile + "12 วันติดต่อกัน" (12 days in a row) + "สถิติสูงสุด 21 วัน · อีก 9 วันทำลายสถิติ" (best 21 days · 9 more to beat it); tapping it opens the streak sheet with freeze/pause; avatar → Profile. No greeting. The card eyebrow is just "แผนวันนี้" (today's plan), and the tomorrow row uses a 🛌 icon instead of a date
+  - greeting, streak pill (opens streak sheet with freeze/pause), avatar → Profile; no date
   - orange "เข้ายิม 18:00 · อีก 2 ชม. 15 นาที · เตือนก่อน 30 นาที" (gym at 18:00 · 2 h 15 min to go · reminder 30 min before) bar
   - **today's plan card:**
     - day title, exercise/set/minute counts, and a 🔒 badge when locked
