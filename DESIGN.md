@@ -468,7 +468,7 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
 **Goal:** a beginner who doesn't know a move can see how to do it, wherever the exercise appears.
 
 **Coverage:**
-- Every exercise the app can plan has a demo: 37 in the prototype, and all 3 Today alternatives (e.g. วิดพื้นแบบเท้าสูง, decline push-up, replaced ไพค์พุชอัพ, pike push-up, which had no demo).
+- Every exercise the app can plan has a demo (37 in the prototype), including the swaps Maxx makes for equipment or soreness. The bodyweight shoulder swap is now วิดพื้นแบบเท้าสูง (decline push-up), replacing ไพค์พุชอัพ (pike push-up), which had no demo.
 - The data lives in `design/exercises/catalog.json`: Thai name, English name, equipment, level, primary and secondary muscles, 4 Thai steps, one "ทำแบบนี้" (do this) cue and one "ผิดบ่อย" (common mistake).
 - Demo frames come from free-exercise-db (Unlicense), which has 870+ exercises with 2 frames each, so the library can grow without new shoots.
 - Production can later swap in looping video from a licensed provider; the UI stays the same.
