@@ -315,7 +315,8 @@ After prototype review the UI moves to **iOS-native patterns** (Human Interface 
 **Flows**
 - **Progress bar** covers the whole onboarding flow, so it no longer fills up early.
 - **Streak:** training *or* logging food counts. Today with meals logged shows as done. A finished workout doesn't add a second day.
-- **One week strip everywhere** (Home, Train, streak sheet):
+- **Streak sheet strip shows status icons, not dates:** each weekday letter sits above 🔥 (logged), 🧊 (freeze used), a dashed circle (missed) or an empty faint circle (upcoming); a blue dot = planned workout day.
+- **One week strip everywhere** (Home, Train, streak sheet; superseded for the streak sheet by the icon rule above and for Plan by weekday + focus tabs):
   - done = orange ring
   - missed = dashed
   - future = faint
