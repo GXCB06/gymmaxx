@@ -468,7 +468,7 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
 **Goal:** a beginner who doesn't know a move can see how to do it, wherever the exercise appears.
 
 **Coverage:**
-- Every exercise the app can plan has a demo (37 in the prototype), including the swaps Maxx makes for equipment or soreness. The bodyweight shoulder swap is now วิดพื้นแบบเท้าสูง (decline push-up), replacing ไพค์พุชอัพ (pike push-up), which had no demo.
+- Every exercise the app can plan has a demo, including the swaps Maxx makes for equipment or soreness. The library now holds **128 exercises** (up from 37), each with start/end frames, 4 Thai steps, a do cue and a common mistake. The bodyweight shoulder swap is now วิดพื้นแบบเท้าสูง (decline push-up), replacing ไพค์พุชอัพ (pike push-up), which had no demo.
 - The data lives in `design/exercises/catalog.json`: Thai name, English name, equipment, level, primary and secondary muscles, 4 Thai steps, one "ทำแบบนี้" (do this) cue and one "ผิดบ่อย" (common mistake).
 - Demo frames come from free-exercise-db (Unlicense), which has 870+ exercises with 2 frames each, so the library can grow without new shoots.
 - Production can later swap in looping video from a licensed provider; the UI stays the same.
@@ -490,10 +490,16 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
   - While logging, the "▶ ดูท่าสาธิต" (see demo) button opens it.
   - The demo is a bottom sheet over the workout (frames, steps, do/avoid, "เข้าใจแล้ว ทำต่อ" got it, continue), so the timer and logged sets are kept.
 - **แผนของฉัน (My plan):** the edit sheet for an exercise starts with "ดูท่าสาธิตและวิธีทำ".
-- **คลังท่า (exercise library):**
-  - All catalog exercises, grouped by muscle, each with its demo thumbnail.
-  - The header says "37 ท่า · ทุกท่ามีภาพสาธิตและวิธีทำ" (37 exercises · every one has a demo and how-to).
-  - Muscle counts are real.
+- **คลังท่า (exercise library), 128 exercises:**
+  - **By muscle (ตามกล้ามเนื้อ):** อก (chest) 16, ไหล่ (shoulders) 15, หลัง (back) 14, หน้าแขน (biceps) 11, หลังแขน (triceps) 10, หน้าท้อง (abs) 14, ต้นขาด้านหน้า (quads) 12, ต้นขาด้านหลัง (hamstrings) 5, ก้น (glutes) 9, and a new น่อง (calves) group with 3.
+  - **Categories (หมวดหมู่) now filter for real**, each showing a subtitle and count:
+    - ใช้อุปกรณ์ที่ฉันมี (equipment I have: dumbbells and bodyweight)
+    - น้ำหนักตัว (bodyweight)
+    - ท่าสำหรับมือใหม่ (beginner)
+    - คาร์ดิโอ (cardio, 9: treadmill, bike, rower, rope and more)
+    - ยืดเหยียดและโมบิลิตี้ (stretching and mobility, 10)
+  - **Search box** above the tabs matches Thai name, English name or equipment (e.g. "curl", "สควอท", "ดัมเบล"). It shows "พบ N ท่า" (N found) and an empty state when nothing matches.
+  - Every row has its demo thumbnail and opens the demo page. On the demo page, "ท่าอื่นสำหรับ…" (other exercises for …) lists the rest of the same section.
 
 ### 10.1 Direction
 
