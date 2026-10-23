@@ -412,20 +412,23 @@ Core job: open the app and know which exercises, how many sets × reps, what wei
   - then 4 meal cards (🌅 เช้า breakfast · ☀️ กลางวัน lunch · 🌙 เย็น dinner · 🍌 ของว่าง snacks), each with a kcal subtotal and "+ เพิ่ม" (add)
   - add opens search, recent and favourites into that meal, with "📷 สแกนแทน" (scan instead); tap a logged item to change the portion or delete it
 
-### 10.0e Scan button chooser and a simpler ผลสแกน (Fitbod-inspired, Oct 2026)
+### 10.0e Scan popup and a simpler ผลสแกน with score rings (Fitbod-inspired, Oct 2026)
 
-- **Scan button → "จะสแกนอะไร?" (what are you scanning?) first**, styled like Fitbod's "Switch Workout" list:
-  - three big cards, each with a radio, title, one-line description and picture on the right (plate / body map / barcode):
+- **Scan button → "จะสแกนอะไร?" (what are you scanning?) as a popup:**
+  - The scan button opens a bottom sheet over the current tab and does not leave the page. It works from วันนี้ (Today), แผน (Plan), คลังท่า (exercise library), อาหาร (Food) and ผลสแกน (scan results). Close it with ✕ to stay where you were.
+  - The sheet is styled like Fitbod's "Switch Workout" list. It has three cards, each with a picture (plate / body map / barcode), title, one-line description and chevron:
     - สแกนอาหาร (scan food)
     - สแกนร่างกาย (scan body), with an "ถึงรอบสแกนอีก 3 วัน" (next scan due in 3 days) tag
     - สแกนบาร์โค้ด (scan barcode)
-  - then "ตัวเลือกอื่น" (other options): ให้ AI ดูเองว่าเป็นอะไร (let AI decide), ค้นหาเมนูอาหารแทน (search dishes instead), เลือกรูปจากคลังภาพ (pick from photo library)
-  - tapping a card opens the camera in that mode
-  - the camera title is a "อาหาร ▼" (food ▼) style button that reopens the chooser; the bottom row of mode tiles was removed
+  - The last-used option has a blue outline.
+  - Then "ตัวเลือกอื่น" (other options): ให้ AI ดูเองว่าเป็นอะไร (let AI decide), ค้นหาเมนูอาหารแทน (search dishes instead), เลือกรูปจากคลังภาพ (pick from photo library).
+  - Picking an option opens the camera straight in that mode (`gymmaxx.scanMode`).
+  - Links that already know the mode skip the sheet: "สแกนใหม่" (scan again) and "เพิ่มรูปหลัง" (add a back photo) open body mode, and Food's "สแกนแทน" (scan instead) opens food mode.
+  - In the camera, the "อาหาร ▼" (food ▼) style title reopens the same sheet over the camera. The bottom row of mode tiles was removed.
 - **ผลสแกน is one scrolling page, no segmented control:**
   1. Header: "สแกนครั้งที่ 3" (scan no. 3) + "ผลสแกน" + a "สแกนใหม่อีก 3 วัน" (next scan in 3 days) pill.
-  2. Score card: 64/100, "+6 จากครั้งแรก" (+6 since first scan), colour body map, body type and body-fat tiles, and a 🎯 "ต้องเร่ง: ไหล่ (55)" (needs work: shoulders, 55) row linking to the plan.
-  3. **"แต่ละส่วน" (each zone), weakest first:** Fitbod-style rows with a muscle-highlight figure, name, status tag (ต้องเร่ง <60 needs work / กำลังพัฒนา 60–79 improving / ดีแล้ว 80+ good), bar, score and change since first scan; then a dashed "หลัง · ยังไม่มีคะแนน" (back · no score yet) row asking for a back photo; then the "how we calculate" link.
+  2. **Circular score card:** a ring filled to 64% around the colour body map, then 64/100 "คะแนนรวม" (overall score), "+6 จากครั้งแรก" (+6 since first scan), body type and body-fat tiles, and a 🎯 "ต้องเร่ง: ไหล่ (55)" (needs work: shoulders, 55) row linking to the plan.
+  3. **"แต่ละส่วน" (each zone), weakest first:** Fitbod-style rows with a muscle-highlight figure, name, status tag (ต้องเร่ง <60 needs work / กำลังพัฒนา 60–79 improving / ดีแล้ว 80+ good) and "▲ +N จากครั้งแรก" (up N since first scan), with the score inside a small coloured ring on the right (red / yellow / green); then a dashed "หลัง · ยังไม่มีคะแนน" (back · no score yet) row asking for a back photo; then the "how we calculate" link.
   4. "ความแข็งแรง" (strength): 3 tiles and the per-exercise chart with the outlier fix.
   5. "เทียบกับครั้งแรก" (compared with first scan): first vs now body maps, change list, share card.
   - The streak and badge cards moved off this page: the streak lives on Today, and badges live in Profile.
