@@ -1,0 +1,1092 @@
+{
+ "license_note": "Demo frames: free-exercise-db (Unlicense, public domain). Thai how-to text written for GymMaxx.",
+ "aliases_th": {
+  "ดึงบาร์ลงด้านหน้า": "ดึงลงด้วยเครื่อง",
+  "ดึงข้อ (ช่วยแรง)": "ดึงข้อ",
+  "ดึงเชือกเข้าหน้า": "เฟซพูล",
+  "ดิปส์เก้าอี้": "ดิปส์ม้านั่ง",
+  "ไพค์พุชอัพ": "วิดพื้นแบบเท้าสูง",
+  "ดันอกดัมเบลม้านั่งเอียง ": "ดันอกดัมเบลม้านั่งเอียง",
+  "เคเบิลยกด้านข้าง": "ยกดัมเบลด้านข้าง",
+  "ยกดัมเบลด้านข้าง (เคเบิล)": "ยกดัมเบลด้านข้าง"
+ },
+ "exercises": [
+  {
+   "th": "ดันอกบาร์เบล",
+   "en": "Barbell Bench Press",
+   "source_id": "Barbell_Bench_Press_-_Medium_Grip",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg"
+   ],
+   "equipment_th": "บาร์เบล + ม้านั่งราบ",
+   "level_th": "ปานกลาง",
+   "group_th": "อก",
+   "primary_th": "อกกลาง",
+   "secondary_th": "ไหล่หน้า หลังแขน",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "deltoids",
+    "triceps"
+   ],
+   "steps_th": [
+    "นอนบนม้านั่ง ตาอยู่ใต้บาร์ เท้าวางเต็มพื้น",
+    "จับบาร์กว้างกว่าไหล่เล็กน้อย ยกบาร์ออกจากที่วาง แขนตึงเหนืออก",
+    "ลดบาร์ลงช้า ๆ แตะกลางอก ศอกทำมุมราว 45° กับลำตัว",
+    "ดันบาร์ขึ้นตรง ๆ จนแขนเกือบตึง"
+   ],
+   "do_th": "บีบสะบักเข้าหากัน อกยกขึ้นตลอดเซ็ต",
+   "avoid_th": "กระแทกบาร์กับอก หรือยกก้นลอยจากม้านั่ง"
+  },
+  {
+   "th": "ดันอกดัมเบล",
+   "en": "Dumbbell Bench Press",
+   "source_id": "Dumbbell_Bench_Press",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล + ม้านั่งราบ",
+   "level_th": "มือใหม่",
+   "group_th": "อก",
+   "primary_th": "อกกลาง",
+   "secondary_th": "ไหล่หน้า หลังแขน",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "deltoids",
+    "triceps"
+   ],
+   "steps_th": [
+    "นั่งปลายม้านั่ง วางดัมเบลบนต้นขา แล้วเอนตัวนอนพร้อมยกดัมเบลขึ้น",
+    "เริ่มที่แขนตึงเหนืออก ฝ่ามือหันไปทางเท้า",
+    "ลดดัมเบลลงข้างอกช้า ๆ จนรู้สึกอกยืด",
+    "ดันขึ้นจนดัมเบลเกือบชนกันด้านบน"
+   ],
+   "do_th": "คุมดัมเบลให้นิ่ง ลงช้า 2 วินาที",
+   "avoid_th": "กางศอกออกตั้งฉากกับลำตัว (เจ็บไหล่ง่าย)"
+  },
+  {
+   "th": "ดันอกดัมเบลม้านั่งเอียง",
+   "en": "Incline Dumbbell Press",
+   "source_id": "Incline_Dumbbell_Press",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล + ม้านั่งปรับเอียง",
+   "level_th": "มือใหม่",
+   "group_th": "อก",
+   "primary_th": "อกบน",
+   "secondary_th": "ไหล่หน้า หลังแขน",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "deltoids",
+    "triceps"
+   ],
+   "steps_th": [
+    "ปรับม้านั่งเอียงราว 30°",
+    "นอนพิง ยกดัมเบลขึ้นเหนืออกบน แขนตึง",
+    "ลดดัมเบลลงข้างอกบนช้า ๆ",
+    "ดันขึ้นเป็นแนวโค้งเล็กน้อย จนดัมเบลเกือบชนกัน"
+   ],
+   "do_th": "เอียงแค่ 30° พอ อกบนทำงานเต็มที่",
+   "avoid_th": "ปรับเอียงชันเกินไป ไหล่จะรับแรงแทนอก"
+  },
+  {
+   "th": "เคเบิลฟลาย",
+   "en": "Cable Fly",
+   "source_id": "Cable_Crossover",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/1.jpg"
+   ],
+   "equipment_th": "เคเบิลครอสโอเวอร์",
+   "level_th": "มือใหม่",
+   "group_th": "อก",
+   "primary_th": "อก",
+   "secondary_th": "ไหล่หน้า",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "deltoids"
+   ],
+   "steps_th": [
+    "ตั้งรอกสูงทั้งสองข้าง จับมือจับ ก้าวเท้าไปหน้าหนึ่งก้าว",
+    "โน้มตัวไปหน้าเล็กน้อย ศอกงอนิดหน่อยค้างไว้",
+    "ดึงมือลงมาเป็นวงโค้ง จนมือมาชนกันหน้าลำตัว",
+    "ปล่อยกลับช้า ๆ จนรู้สึกอกยืด"
+   ],
+   "do_th": "นึกภาพว่ากำลังกอดต้นไม้ใหญ่",
+   "avoid_th": "งอศอกมากจนกลายเป็นท่ากด"
+  },
+  {
+   "th": "ดัมเบลฟลาย",
+   "en": "Dumbbell Fly",
+   "source_id": "Dumbbell_Flyes",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Flyes/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Flyes/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล + ม้านั่งราบ",
+   "level_th": "มือใหม่",
+   "group_th": "อก",
+   "primary_th": "อก",
+   "secondary_th": "ไหล่หน้า",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "deltoids"
+   ],
+   "steps_th": [
+    "นอนบนม้านั่ง ยกดัมเบลเหนืออก ฝ่ามือหันเข้าหากัน",
+    "งอศอกเล็กน้อยแล้วค้างมุมนี้ไว้",
+    "กางแขนลงด้านข้างช้า ๆ จนรู้สึกอกยืด",
+    "หุบแขนกลับขึ้นเป็นวงโค้ง"
+   ],
+   "do_th": "ใช้น้ำหนักเบากว่าท่าดัน",
+   "avoid_th": "ลดแขนต่ำเกินระดับไหล่"
+  },
+  {
+   "th": "วิดพื้น",
+   "en": "Push-up",
+   "source_id": "Pushups",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pushups/1.jpg"
+   ],
+   "equipment_th": "น้ำหนักตัว",
+   "level_th": "มือใหม่",
+   "group_th": "อก",
+   "primary_th": "อก",
+   "secondary_th": "ไหล่หน้า หลังแขน หน้าท้อง",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "deltoids",
+    "triceps",
+    "abs"
+   ],
+   "steps_th": [
+    "วางมือกว้างกว่าไหล่เล็กน้อย ลำตัวตรงตั้งแต่หัวถึงส้นเท้า",
+    "เกร็งท้องและก้น",
+    "ลดตัวลงจนอกเกือบแตะพื้น ศอกชี้เฉียงไปด้านหลัง",
+    "ดันตัวขึ้นจนแขนตึง"
+   ],
+   "do_th": "ยังไม่ไหว ให้วางเข่าบนพื้นก่อน",
+   "avoid_th": "สะโพกตกหรือก้นโด่ง"
+  },
+  {
+   "th": "ดันอกดัมเบลบนพื้น",
+   "en": "Dumbbell Floor Press",
+   "source_id": "Dumbbell_Floor_Press",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Floor_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Floor_Press/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล",
+   "level_th": "มือใหม่",
+   "group_th": "อก",
+   "primary_th": "อก",
+   "secondary_th": "หลังแขน",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "triceps"
+   ],
+   "steps_th": [
+    "นอนหงายบนพื้น ชันเข่า ถือดัมเบลไว้เหนืออก",
+    "ลดดัมเบลลงจนต้นแขนแตะพื้นเบา ๆ",
+    "ค้างครึ่งวินาที",
+    "ดันขึ้นจนแขนตึง"
+   ],
+   "do_th": "เหมาะกับที่บ้านที่ไม่มีม้านั่ง",
+   "avoid_th": "ปล่อยศอกกระแทกพื้น"
+  },
+  {
+   "th": "วิดพื้นแบบเท้าสูง",
+   "en": "Decline Push-up",
+   "source_id": "Decline_Push-Up",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Push-Up/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Push-Up/1.jpg"
+   ],
+   "equipment_th": "น้ำหนักตัว + เก้าอี้",
+   "level_th": "ปานกลาง",
+   "group_th": "ไหล่",
+   "primary_th": "อกบน ไหล่หน้า",
+   "secondary_th": "หลังแขน",
+   "body_side": "front",
+   "primary_muscles": [
+    "deltoids",
+    "chest"
+   ],
+   "secondary_muscles": [
+    "triceps"
+   ],
+   "steps_th": [
+    "วางเท้าบนเก้าอี้หรือม้านั่ง มือวางบนพื้น",
+    "ลำตัวตรง เกร็งท้อง",
+    "ลดตัวลงจนหน้าเกือบแตะพื้น",
+    "ดันขึ้นจนแขนตึง"
+   ],
+   "do_th": "ใช้แทนท่าดันไหล่ได้เมื่อไม่มีอุปกรณ์",
+   "avoid_th": "แอ่นหลังหรือคอตก"
+  },
+  {
+   "th": "ดันดัมเบลเหนือศีรษะ",
+   "en": "Dumbbell Shoulder Press",
+   "source_id": "Dumbbell_Shoulder_Press",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล + ม้านั่ง",
+   "level_th": "มือใหม่",
+   "group_th": "ไหล่",
+   "primary_th": "ไหล่หน้า ไหล่ข้าง",
+   "secondary_th": "หลังแขน อกบน",
+   "body_side": "front",
+   "primary_muscles": [
+    "deltoids"
+   ],
+   "secondary_muscles": [
+    "triceps",
+    "chest"
+   ],
+   "steps_th": [
+    "นั่งหลังตรงบนม้านั่งที่ตั้งพนักพิง",
+    "ยกดัมเบลไว้ระดับหู ฝ่ามือหันไปหน้า",
+    "ดันขึ้นจนแขนเกือบตึง ดัมเบลเกือบชนกันเหนือหัว",
+    "ลดลงช้า ๆ กลับมาระดับหู"
+   ],
+   "do_th": "เกร็งท้อง หลังแนบพนักพิง",
+   "avoid_th": "แอ่นหลังเพื่อดันน้ำหนัก"
+  },
+  {
+   "th": "เครื่องดันไหล่",
+   "en": "Machine Shoulder Press",
+   "source_id": "Machine_Shoulder_Military_Press",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Shoulder_Military_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Shoulder_Military_Press/1.jpg"
+   ],
+   "equipment_th": "เครื่องดันไหล่",
+   "level_th": "มือใหม่",
+   "group_th": "ไหล่",
+   "primary_th": "ไหล่หน้า ไหล่ข้าง",
+   "secondary_th": "หลังแขน",
+   "body_side": "front",
+   "primary_muscles": [
+    "deltoids"
+   ],
+   "secondary_muscles": [
+    "triceps"
+   ],
+   "steps_th": [
+    "ปรับเบาะให้มือจับอยู่ระดับไหล่",
+    "นั่งหลังแนบพนัก จับมือจับ",
+    "ดันขึ้นจนแขนเกือบตึง",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "เหมาะกับมือใหม่ เครื่องคุมทิศทางให้",
+   "avoid_th": "ลดลงเร็วจนน้ำหนักกระแทก"
+  },
+  {
+   "th": "ยกดัมเบลด้านข้าง",
+   "en": "Lateral Raise",
+   "source_id": "Side_Lateral_Raise",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล",
+   "level_th": "มือใหม่",
+   "group_th": "ไหล่",
+   "primary_th": "ไหล่ข้าง",
+   "secondary_th": "บ่า",
+   "body_side": "front",
+   "primary_muscles": [
+    "deltoids"
+   ],
+   "secondary_muscles": [
+    "trapezius"
+   ],
+   "steps_th": [
+    "ยืนตรง ถือดัมเบลไว้ข้างลำตัว",
+    "งอศอกเล็กน้อย",
+    "ยกแขนออกด้านข้างจนถึงระดับไหล่",
+    "ลดลงช้า ๆ 2 วินาที"
+   ],
+   "do_th": "นำด้วยศอก ไม่ใช่มือ ใช้น้ำหนักเบา",
+   "avoid_th": "เหวี่ยงตัวหรือยกไหล่ขึ้นหาหู"
+  },
+  {
+   "th": "ยกดัมเบลด้านหน้า",
+   "en": "Front Raise",
+   "source_id": "Front_Dumbbell_Raise",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Dumbbell_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Dumbbell_Raise/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล",
+   "level_th": "มือใหม่",
+   "group_th": "ไหล่",
+   "primary_th": "ไหล่หน้า",
+   "secondary_th": "อกบน",
+   "body_side": "front",
+   "primary_muscles": [
+    "deltoids"
+   ],
+   "secondary_muscles": [
+    "chest"
+   ],
+   "steps_th": [
+    "ยืนตรง ถือดัมเบลไว้หน้าต้นขา",
+    "ยกแขนไปข้างหน้าจนถึงระดับไหล่",
+    "ค้างครึ่งวินาที",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "ลำตัวนิ่ง ไม่โยก",
+   "avoid_th": "ยกสูงเกินระดับไหล่"
+  },
+  {
+   "th": "เฟซพูล",
+   "en": "Face Pull",
+   "source_id": "Face_Pull",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg"
+   ],
+   "equipment_th": "เคเบิล + เชือก",
+   "level_th": "มือใหม่",
+   "group_th": "ไหล่",
+   "primary_th": "ไหล่หลัง",
+   "secondary_th": "บ่า หลังบน",
+   "body_side": "back",
+   "primary_muscles": [
+    "deltoids"
+   ],
+   "secondary_muscles": [
+    "trapezius",
+    "upper-back"
+   ],
+   "steps_th": [
+    "ตั้งรอกระดับหน้า ใส่ด้ามเชือก จับสองมือ",
+    "ถอยหลังจนสายตึง",
+    "ดึงเชือกเข้าหาหน้า แยกมือออกข้างหู",
+    "ปล่อยกลับช้า ๆ"
+   ],
+   "do_th": "ช่วยไหล่หลังและท่าทาง ดีสำหรับคนนั่งโต๊ะ",
+   "avoid_th": "เอนตัวไปข้างหลังเพื่อดึง"
+  },
+  {
+   "th": "ดึงข้อ",
+   "en": "Pull-up",
+   "source_id": "Pullups",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Pullups/1.jpg"
+   ],
+   "equipment_th": "บาร์โหน",
+   "level_th": "ปานกลาง",
+   "group_th": "หลัง",
+   "primary_th": "หลังกว้าง",
+   "secondary_th": "หน้าแขน",
+   "body_side": "back",
+   "primary_muscles": [
+    "upper-back"
+   ],
+   "secondary_muscles": [
+    "biceps",
+    "trapezius"
+   ],
+   "steps_th": [
+    "จับบาร์กว้างกว่าไหล่ ฝ่ามือหันออก",
+    "ห้อยตัว แขนตึง เกร็งท้อง",
+    "ดึงตัวขึ้นจนคางพ้นบาร์",
+    "ลดตัวลงช้า ๆ จนแขนตึง"
+   ],
+   "do_th": "ยังดึงไม่ขึ้น ใช้เครื่องช่วยแรงหรือยางยืด",
+   "avoid_th": "เหวี่ยงขาส่งแรง"
+  },
+  {
+   "th": "ดึงลงด้วยเครื่อง",
+   "en": "Lat Pulldown",
+   "source_id": "Wide-Grip_Lat_Pulldown",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Wide-Grip_Lat_Pulldown/1.jpg"
+   ],
+   "equipment_th": "เครื่องดึงลง",
+   "level_th": "มือใหม่",
+   "group_th": "หลัง",
+   "primary_th": "หลังกว้าง",
+   "secondary_th": "หน้าแขน",
+   "body_side": "back",
+   "primary_muscles": [
+    "upper-back"
+   ],
+   "secondary_muscles": [
+    "biceps"
+   ],
+   "steps_th": [
+    "นั่ง ล็อกเข่าใต้เบาะ จับบาร์กว้าง",
+    "เอนตัวไปหลังเล็กน้อย อกยกขึ้น",
+    "ดึงบาร์ลงมาถึงอกบน ศอกชี้ลงพื้น",
+    "ปล่อยกลับขึ้นช้า ๆ จนแขนตึง"
+   ],
+   "do_th": "นึกว่าดึงด้วยศอก ไม่ใช่มือ",
+   "avoid_th": "ดึงบาร์ลงหลังคอ"
+  },
+  {
+   "th": "พายเคเบิล",
+   "en": "Seated Cable Row",
+   "source_id": "Seated_Cable_Rows",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+   ],
+   "equipment_th": "เคเบิลพาย",
+   "level_th": "มือใหม่",
+   "group_th": "หลัง",
+   "primary_th": "หลังกลาง",
+   "secondary_th": "หน้าแขน หลังล่าง",
+   "body_side": "back",
+   "primary_muscles": [
+    "upper-back"
+   ],
+   "secondary_muscles": [
+    "biceps",
+    "lower-back"
+   ],
+   "steps_th": [
+    "นั่ง เท้ายันแท่น เข่างอเล็กน้อย จับด้ามจับ",
+    "หลังตรง อกยกขึ้น",
+    "ดึงด้ามจับเข้าหาท้อง บีบสะบักเข้าหากัน",
+    "ปล่อยกลับช้า ๆ จนแขนตึง"
+   ],
+   "do_th": "ค้างตอนบีบสะบัก 1 วินาที",
+   "avoid_th": "โยกตัวไปหน้าหลังเพื่อดึง"
+  },
+  {
+   "th": "พายดัมเบล",
+   "en": "Dumbbell Row",
+   "source_id": "One-Arm_Dumbbell_Row",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Dumbbell_Row/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Dumbbell_Row/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล + ม้านั่ง",
+   "level_th": "มือใหม่",
+   "group_th": "หลัง",
+   "primary_th": "หลังกว้าง",
+   "secondary_th": "หน้าแขน",
+   "body_side": "back",
+   "primary_muscles": [
+    "upper-back"
+   ],
+   "secondary_muscles": [
+    "biceps"
+   ],
+   "steps_th": [
+    "วางเข่าและมือข้างหนึ่งบนม้านั่ง หลังขนานพื้น",
+    "อีกมือถือดัมเบล แขนตึงห้อยลง",
+    "ดึงดัมเบลขึ้นข้างสะโพก ศอกชิดลำตัว",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "ดึงไปทางสะโพก ไม่ใช่ไหล่",
+   "avoid_th": "บิดลำตัวตาม"
+  },
+  {
+   "th": "ซูเปอร์แมน",
+   "en": "Superman",
+   "source_id": "Superman",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Superman/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Superman/1.jpg"
+   ],
+   "equipment_th": "น้ำหนักตัว",
+   "level_th": "มือใหม่",
+   "group_th": "หลัง",
+   "primary_th": "หลังล่าง",
+   "secondary_th": "ก้น",
+   "body_side": "back",
+   "primary_muscles": [
+    "lower-back"
+   ],
+   "secondary_muscles": [
+    "gluteal"
+   ],
+   "steps_th": [
+    "นอนคว่ำ เหยียดแขนไปข้างหน้า",
+    "ยกแขน อก และขาขึ้นพร้อมกัน",
+    "ค้าง 2 วินาที",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "ยกแค่พอรู้สึกหลังทำงาน",
+   "avoid_th": "แหงนคอขึ้นสูง"
+  },
+  {
+   "th": "ม้วนแขนดัมเบล",
+   "en": "Dumbbell Curl",
+   "source_id": "Dumbbell_Bicep_Curl",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล",
+   "level_th": "มือใหม่",
+   "group_th": "แขน",
+   "primary_th": "หน้าแขน",
+   "secondary_th": "แขนท่อนล่าง",
+   "body_side": "front",
+   "primary_muscles": [
+    "biceps"
+   ],
+   "secondary_muscles": [
+    "forearm"
+   ],
+   "steps_th": [
+    "ยืนตรง ถือดัมเบล แขนตึง ฝ่ามือหันไปหน้า",
+    "ศอกแนบข้างลำตัว",
+    "ม้วนดัมเบลขึ้นจนถึงไหล่",
+    "ลดลงช้า ๆ จนแขนตึง"
+   ],
+   "do_th": "ศอกอยู่กับที่ตลอด",
+   "avoid_th": "เหวี่ยงหลังส่งแรง"
+  },
+  {
+   "th": "ม้วนแขนบาร์ EZ",
+   "en": "EZ-Bar Curl",
+   "source_id": "EZ-Bar_Curl",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/1.jpg"
+   ],
+   "equipment_th": "บาร์ EZ",
+   "level_th": "มือใหม่",
+   "group_th": "แขน",
+   "primary_th": "หน้าแขน",
+   "secondary_th": "แขนท่อนล่าง",
+   "body_side": "front",
+   "primary_muscles": [
+    "biceps"
+   ],
+   "secondary_muscles": [
+    "forearm"
+   ],
+   "steps_th": [
+    "ยืนตรง จับบาร์ EZ ตรงช่วงโค้งด้านใน",
+    "ศอกแนบข้างลำตัว",
+    "ม้วนบาร์ขึ้นจนถึงอก",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "บาร์โค้งช่วยลดแรงที่ข้อมือ",
+   "avoid_th": "ยกศอกไปข้างหน้า"
+  },
+  {
+   "th": "แฮมเมอร์เคิร์ล",
+   "en": "Hammer Curl",
+   "source_id": "Hammer_Curls",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Curls/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Curls/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล",
+   "level_th": "มือใหม่",
+   "group_th": "แขน",
+   "primary_th": "หน้าแขน",
+   "secondary_th": "แขนท่อนล่าง",
+   "body_side": "front",
+   "primary_muscles": [
+    "biceps",
+    "forearm"
+   ],
+   "secondary_muscles": [],
+   "steps_th": [
+    "ยืนตรง ถือดัมเบล ฝ่ามือหันเข้าหาลำตัว",
+    "ศอกแนบข้างลำตัว",
+    "ม้วนขึ้นเหมือนถือค้อน",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "ทำทีละข้างได้ ถ้าอยากโฟกัส",
+   "avoid_th": "บิดข้อมือระหว่างยก"
+  },
+  {
+   "th": "กดเคเบิลหลังแขน",
+   "en": "Triceps Pushdown",
+   "source_id": "Triceps_Pushdown",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/1.jpg"
+   ],
+   "equipment_th": "เคเบิล",
+   "level_th": "มือใหม่",
+   "group_th": "แขน",
+   "primary_th": "หลังแขน",
+   "secondary_th": "",
+   "body_side": "back",
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [],
+   "steps_th": [
+    "ตั้งรอกสูง จับบาร์หรือเชือก",
+    "ศอกแนบข้างลำตัว งอศอกราว 90°",
+    "กดลงจนแขนตึง",
+    "ปล่อยกลับช้า ๆ จนถึง 90°"
+   ],
+   "do_th": "ศอกนิ่ง ขยับแค่แขนท่อนล่าง",
+   "avoid_th": "โน้มตัวลงไปกดด้วยน้ำหนักตัว"
+  },
+  {
+   "th": "ดิปส์ม้านั่ง",
+   "en": "Bench Dip",
+   "source_id": "Bench_Dips",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/1.jpg"
+   ],
+   "equipment_th": "ม้านั่งหรือเก้าอี้",
+   "level_th": "มือใหม่",
+   "group_th": "แขน",
+   "primary_th": "หลังแขน",
+   "secondary_th": "อก ไหล่หน้า",
+   "body_side": "back",
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [
+    "deltoids"
+   ],
+   "steps_th": [
+    "นั่งขอบม้านั่ง วางมือข้างสะโพก",
+    "เลื่อนก้นออกมาหน้าม้านั่ง ขาเหยียด",
+    "งอศอกลดตัวลงจนศอกราว 90°",
+    "ดันตัวขึ้นจนแขนตึง"
+   ],
+   "do_th": "ง่ายขึ้นได้ด้วยการงอเข่า",
+   "avoid_th": "ลดตัวต่ำเกินจนเจ็บไหล่"
+  },
+  {
+   "th": "ดัมเบลหลังแขนเหนือศีรษะ",
+   "en": "Overhead Triceps Extension",
+   "source_id": "Standing_Dumbbell_Triceps_Extension",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Dumbbell_Triceps_Extension/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Dumbbell_Triceps_Extension/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล",
+   "level_th": "มือใหม่",
+   "group_th": "แขน",
+   "primary_th": "หลังแขน",
+   "secondary_th": "",
+   "body_side": "back",
+   "primary_muscles": [
+    "triceps"
+   ],
+   "secondary_muscles": [],
+   "steps_th": [
+    "ยืนหรือนั่ง จับดัมเบลสองมือ ยกเหนือศีรษะ",
+    "ศอกชี้ขึ้นข้างหู",
+    "ลดดัมเบลลงหลังศีรษะช้า ๆ",
+    "เหยียดแขนขึ้นจนตึง"
+   ],
+   "do_th": "ศอกชิดหู ไม่กางออก",
+   "avoid_th": "แอ่นหลัง"
+  },
+  {
+   "th": "สควอท",
+   "en": "Barbell Squat",
+   "source_id": "Barbell_Squat",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/1.jpg"
+   ],
+   "equipment_th": "บาร์เบล + แร็ค",
+   "level_th": "ปานกลาง",
+   "group_th": "ขา",
+   "primary_th": "ต้นขาหน้า ก้น",
+   "secondary_th": "ต้นขาหลัง หลังล่าง",
+   "body_side": "front",
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "adductors"
+   ],
+   "steps_th": [
+    "วางบาร์บนบ่า (ไม่ใช่บนคอ) ยกออกจากแร็ค",
+    "ยืนเท้ากว้างเท่าไหล่ ปลายเท้าชี้ออกเล็กน้อย",
+    "นั่งลงเหมือนนั่งเก้าอี้ จนต้นขาขนานพื้น",
+    "ดันพื้นยืนขึ้น"
+   ],
+   "do_th": "เข่าชี้ทางเดียวกับปลายเท้า หลังตรง",
+   "avoid_th": "ส้นเท้าลอย หรือเข่าหุบเข้า"
+  },
+  {
+   "th": "กอบเลตสควอท",
+   "en": "Goblet Squat",
+   "source_id": "Goblet_Squat",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+   ],
+   "equipment_th": "ดัมเบลหรือเคตเทิลเบล",
+   "level_th": "มือใหม่",
+   "group_th": "ขา",
+   "primary_th": "ต้นขาหน้า ก้น",
+   "secondary_th": "หน้าท้อง",
+   "body_side": "front",
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "abs"
+   ],
+   "steps_th": [
+    "ถือดัมเบลแนวตั้งชิดอก",
+    "ยืนเท้ากว้างกว่าไหล่เล็กน้อย",
+    "นั่งลงลึก ศอกอยู่ระหว่างเข่า",
+    "ดันพื้นยืนขึ้น"
+   ],
+   "do_th": "ท่าแรกที่ดีที่สุดสำหรับฝึกสควอท",
+   "avoid_th": "โน้มตัวไปหน้ามาก"
+  },
+  {
+   "th": "สควอทน้ำหนักตัว",
+   "en": "Bodyweight Squat",
+   "source_id": "Bodyweight_Squat",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Squat/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Squat/1.jpg"
+   ],
+   "equipment_th": "น้ำหนักตัว",
+   "level_th": "มือใหม่",
+   "group_th": "ขา",
+   "primary_th": "ต้นขาหน้า ก้น",
+   "secondary_th": "",
+   "body_side": "front",
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [],
+   "steps_th": [
+    "ยืนเท้ากว้างเท่าไหล่ ยื่นแขนไปหน้า",
+    "นั่งลงจนต้นขาขนานพื้น",
+    "น้ำหนักอยู่ที่ส้นเท้า",
+    "ยืนขึ้น"
+   ],
+   "do_th": "ทำช้า ๆ ลง 3 วินาที ยากขึ้นทันที",
+   "avoid_th": "เข่าหุบเข้าหากัน"
+  },
+  {
+   "th": "เลกเพรส",
+   "en": "Leg Press",
+   "source_id": "Leg_Press",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Press/1.jpg"
+   ],
+   "equipment_th": "เครื่องเลกเพรส",
+   "level_th": "มือใหม่",
+   "group_th": "ขา",
+   "primary_th": "ต้นขาหน้า ก้น",
+   "secondary_th": "ต้นขาหลัง",
+   "body_side": "front",
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "adductors"
+   ],
+   "steps_th": [
+    "นั่งพิงเบาะ วางเท้ากลางแท่นกว้างเท่าไหล่",
+    "ปลดล็อก ดันแท่นจนขาเกือบตึง",
+    "ลดแท่นลงจนเข่างอราว 90°",
+    "ดันขึ้นโดยไม่ล็อกเข่า"
+   ],
+   "do_th": "หลังและก้นแนบเบาะตลอด",
+   "avoid_th": "ล็อกเข่าตึงสุดตอนดันขึ้น"
+  },
+  {
+   "th": "โรมาเนียนเดดลิฟต์",
+   "en": "Romanian Deadlift",
+   "source_id": "Romanian_Deadlift",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+   ],
+   "equipment_th": "บาร์เบล",
+   "level_th": "ปานกลาง",
+   "group_th": "ขา",
+   "primary_th": "ต้นขาหลัง ก้น",
+   "secondary_th": "หลังล่าง",
+   "body_side": "back",
+   "primary_muscles": [
+    "hamstring",
+    "gluteal"
+   ],
+   "secondary_muscles": [
+    "lower-back"
+   ],
+   "steps_th": [
+    "ยืนถือบาร์ระดับต้นขา เข่างอนิดเดียว",
+    "ดันสะโพกไปข้างหลัง ให้บาร์ไถลลงตามขา",
+    "ลงจนรู้สึกต้นขาหลังตึง (ราวกลางหน้าแข้ง)",
+    "ดันสะโพกไปหน้า ยืนขึ้น"
+   ],
+   "do_th": "หลังตรงตลอด บาร์ชิดขา",
+   "avoid_th": "งอหลังเพื่อลงให้ต่ำ"
+  },
+  {
+   "th": "เครื่องพับขา",
+   "en": "Leg Curl",
+   "source_id": "Lying_Leg_Curls",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_Leg_Curls/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_Leg_Curls/1.jpg"
+   ],
+   "equipment_th": "เครื่องพับขา",
+   "level_th": "มือใหม่",
+   "group_th": "ขา",
+   "primary_th": "ต้นขาหลัง",
+   "secondary_th": "น่อง",
+   "body_side": "back",
+   "primary_muscles": [
+    "hamstring"
+   ],
+   "secondary_muscles": [
+    "calves"
+   ],
+   "steps_th": [
+    "นอนคว่ำบนเครื่อง เบาะรองอยู่เหนือส้นเท้า",
+    "จับมือจับ สะโพกแนบเบาะ",
+    "พับขาขึ้นจนสุด",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "ค้างด้านบน 1 วินาที",
+   "avoid_th": "ยกสะโพกขึ้นช่วย"
+  },
+  {
+   "th": "ฮิปทรัสต์",
+   "en": "Hip Thrust",
+   "source_id": "Barbell_Hip_Thrust",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/1.jpg"
+   ],
+   "equipment_th": "บาร์เบล + ม้านั่ง",
+   "level_th": "ปานกลาง",
+   "group_th": "ขา",
+   "primary_th": "ก้น",
+   "secondary_th": "ต้นขาหลัง",
+   "body_side": "back",
+   "primary_muscles": [
+    "gluteal"
+   ],
+   "secondary_muscles": [
+    "hamstring"
+   ],
+   "steps_th": [
+    "นั่งพื้น หลังพิงขอบม้านั่ง วางบาร์บนสะโพก (ใช้ฟองน้ำรอง)",
+    "ชันเข่า เท้าวางเต็มพื้น",
+    "ดันสะโพกขึ้นจนลำตัวขนานพื้น บีบก้น",
+    "ลดสะโพกลงช้า ๆ"
+   ],
+   "do_th": "คางชิดอก มองไปข้างหน้า",
+   "avoid_th": "แอ่นหลังด้านบน"
+  },
+  {
+   "th": "บัลแกเรียนสปลิตสควอท",
+   "en": "Split Squat",
+   "source_id": "Split_Squat_with_Dumbbells",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squat_with_Dumbbells/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Split_Squat_with_Dumbbells/1.jpg"
+   ],
+   "equipment_th": "ดัมเบล",
+   "level_th": "ปานกลาง",
+   "group_th": "ขา",
+   "primary_th": "ต้นขาหน้า ก้น",
+   "secondary_th": "",
+   "body_side": "front",
+   "primary_muscles": [
+    "quadriceps"
+   ],
+   "secondary_muscles": [
+    "adductors"
+   ],
+   "steps_th": [
+    "ถือดัมเบลสองข้าง ก้าวขาหนึ่งไปข้างหน้า",
+    "ลดตัวลงตรง ๆ จนเข่าหลังเกือบแตะพื้น",
+    "เข่าหน้าอยู่เหนือข้อเท้า",
+    "ดันส้นเท้าหน้ายืนขึ้น ทำครบแล้วสลับข้าง"
+   ],
+   "do_th": "วางเท้าหลังบนม้านั่งเพื่อให้ยากขึ้น",
+   "avoid_th": "เข่าหน้าพับเข้าด้านใน"
+  },
+  {
+   "th": "ครันช์",
+   "en": "Crunch",
+   "source_id": "Crunches",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/1.jpg"
+   ],
+   "equipment_th": "น้ำหนักตัว",
+   "level_th": "มือใหม่",
+   "group_th": "หน้าท้อง",
+   "primary_th": "หน้าท้อง",
+   "secondary_th": "",
+   "body_side": "front",
+   "primary_muscles": [
+    "abs"
+   ],
+   "secondary_muscles": [],
+   "steps_th": [
+    "นอนหงาย ชันเข่า มือแตะข้างศีรษะ",
+    "เกร็งท้อง ยกไหล่ขึ้นจากพื้น",
+    "ค้าง 1 วินาที",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "หายใจออกตอนยกขึ้น",
+   "avoid_th": "ดึงคอด้วยมือ"
+  },
+  {
+   "th": "แพลงก์",
+   "en": "Plank",
+   "source_id": "Plank",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+   ],
+   "equipment_th": "น้ำหนักตัว",
+   "level_th": "มือใหม่",
+   "group_th": "หน้าท้อง",
+   "primary_th": "หน้าท้อง",
+   "secondary_th": "ไหล่ ก้น",
+   "body_side": "front",
+   "primary_muscles": [
+    "abs",
+    "obliques"
+   ],
+   "secondary_muscles": [
+    "deltoids"
+   ],
+   "steps_th": [
+    "วางศอกใต้ไหล่ ปลายเท้ายันพื้น",
+    "ลำตัวตรงตั้งแต่หัวถึงส้นเท้า",
+    "เกร็งท้องและก้น",
+    "ค้างตามเวลาที่กำหนด หายใจปกติ"
+   ],
+   "do_th": "เริ่ม 20–30 วินาทีก่อน",
+   "avoid_th": "สะโพกตกหรือก้นโด่ง"
+  },
+  {
+   "th": "ห้อยยกขา",
+   "en": "Hanging Leg Raise",
+   "source_id": "Hanging_Leg_Raise",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/1.jpg"
+   ],
+   "equipment_th": "บาร์โหน",
+   "level_th": "ปานกลาง",
+   "group_th": "หน้าท้อง",
+   "primary_th": "หน้าท้องล่าง",
+   "secondary_th": "สะโพก",
+   "body_side": "front",
+   "primary_muscles": [
+    "abs"
+   ],
+   "secondary_muscles": [
+    "obliques"
+   ],
+   "steps_th": [
+    "ห้อยตัวจากบาร์ แขนตึง",
+    "เกร็งท้อง ไม่ให้ตัวแกว่ง",
+    "ยกขาขึ้นจนขนานพื้น (งอเข่าได้ถ้ายังไม่ไหว)",
+    "ลดลงช้า ๆ"
+   ],
+   "do_th": "เริ่มจากยกเข่าก่อน",
+   "avoid_th": "เหวี่ยงตัวส่งขา"
+  },
+  {
+   "th": "เคเบิลครันช์",
+   "en": "Cable Crunch",
+   "source_id": "Cable_Crunch",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/1.jpg"
+   ],
+   "equipment_th": "เคเบิล + เชือก",
+   "level_th": "ปานกลาง",
+   "group_th": "หน้าท้อง",
+   "primary_th": "หน้าท้อง",
+   "secondary_th": "",
+   "body_side": "front",
+   "primary_muscles": [
+    "abs"
+   ],
+   "secondary_muscles": [
+    "obliques"
+   ],
+   "steps_th": [
+    "ตั้งรอกสูง จับเชือกไว้ข้างหู คุกเข่าหันหน้าเข้าเครื่อง",
+    "สะโพกนิ่ง",
+    "ม้วนลำตัวลง ศอกเข้าหาเข่า",
+    "กลับขึ้นช้า ๆ"
+   ],
+   "do_th": "ใช้ท้องม้วน ไม่ใช่ดึงด้วยแขน",
+   "avoid_th": "นั่งลงบนส้นเท้า"
+  },
+  {
+   "th": "เครื่องดันอกเอียง",
+   "en": "Machine Incline Press",
+   "source_id": "Leverage_Incline_Chest_Press",
+   "frames": [
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Incline_Chest_Press/0.jpg",
+    "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leverage_Incline_Chest_Press/1.jpg"
+   ],
+   "equipment_th": "เครื่องดันอก",
+   "level_th": "มือใหม่",
+   "group_th": "อก",
+   "primary_th": "อกบน",
+   "secondary_th": "ไหล่หน้า หลังแขน",
+   "body_side": "front",
+   "primary_muscles": [
+    "chest"
+   ],
+   "secondary_muscles": [
+    "deltoids",
+    "triceps"
+   ],
+   "steps_th": [
+    "ปรับเบาะให้มือจับอยู่ระดับอกบน",
+    "นั่งหลังแนบพนัก",
+    "ดันออกจนแขนเกือบตึง",
+    "ปล่อยกลับช้า ๆ"
+   ],
+   "do_th": "ปลอดภัยสำหรับฝึกคนเดียว",
+   "avoid_th": "ยกไหล่ขึ้นหาหู"
+  }
+ ]
+}

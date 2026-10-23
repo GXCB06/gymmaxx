@@ -437,9 +437,9 @@ Core job: open the app and know which exercises, how many sets × reps, what wei
   - examples: สตรีค 7 วัน (7-day streak), ยกหนักขึ้นครั้งแรก (first heavier lift), สแกน 3 ครั้ง (3 scans), โปรตีนครบ 7 วัน (protein target 7 days), ฝึกครบ 20 ครั้ง (20 workouts), สตรีค 30 วัน (30-day streak), จุดอ่อนขึ้น 10 (weak spot +10), คะแนนรวม 70 (overall score 70)
   - tap a badge to see how to earn it and the date earned, or current progress (e.g. 11/20)
 
-### 10.0f Mockup: Fitbod-style วันนี้ (Today) page (proposal, not yet approved)
+### 10.0f Fitbod-style วันนี้ (Today) page (approved, Oct 2026)
 
-The canvas board is `HomeFitbod`. The current Home stays until this is approved.
+Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is the first-day version).
 
 - **Header:** avatar + "แผนฟิตหุ่นของต้น ›" (Ton's fitness plan, links to Plan), and the streak pill on the right. No dates.
 - **Title block:**
@@ -460,6 +460,40 @@ The canvas board is `HomeFitbod`. The current Home stays until this is approved.
 - **"⋯" menu:** บันทึกเป็นเวิร์กเอาต์โปรด (save as favourite), แชร์ (share), ให้ Maxx จัดท่าใหม่ (let Maxx reshuffle), กลับไปตามแผนเดิม (back to the plan), แก้ในแผนของฉัน (edit in my plan).
 - **All changes are for today only;** the weekly plan is unchanged.
 - **Food and tomorrow cards are removed** so the page focuses on the workout. Food lives in its own tab.
+- **First-day users** see a "เปิดการแจ้งเตือน" (turn on notifications) card under the list.
+- **Every exercise photo** shows a ▶ badge and opens that exercise's demo (see 10.0g).
+
+### 10.0g Exercise demos for every exercise (Oct 2026)
+
+**Goal:** a beginner who doesn't know a move can see how to do it, wherever the exercise appears.
+
+**Coverage:**
+- Every exercise the app can plan has a demo: 37 in the prototype, and all 3 Today alternatives (e.g. วิดพื้นแบบเท้าสูง, decline push-up, replaced ไพค์พุชอัพ, pike push-up, which had no demo).
+- The data lives in `design/exercises/catalog.json`: Thai name, English name, equipment, level, primary and secondary muscles, 4 Thai steps, one "ทำแบบนี้" (do this) cue and one "ผิดบ่อย" (common mistake).
+- Demo frames come from free-exercise-db (Unlicense), which has 870+ exercises with 2 frames each, so the library can grow without new shoots.
+- Production can later swap in looping video from a licensed provider; the UI stays the same.
+
+**Demo page (`Exercise`, Fitbod-style):**
+- The start and end frames alternate as a loop (labelled "1 · ท่าเริ่ม" start / "2 · ท่าจบ" end), with ⏸ pause and "🐢 ช้าลง" (slower) controls. It respects reduced motion.
+- Then the name, English name · equipment, and tags: level, muscles, and "ตรงกับจุดอ่อนของคุณ" (matches your weak spot).
+- Tabs:
+  - **วิธีทำ** (how to): numbered steps, plus ✓ do / ✕ common mistake cards
+  - **กล้ามที่ใช้** (muscles used): front and back body maps, primary and secondary
+  - **ประวัติ** (history): best set, Maxx's suggestion for next time, last 3 sessions, or an empty state
+- "ท่าอื่นสำหรับ<กลุ่ม>" (other exercises for <group>): a horizontal row of other exercises for the same muscle group, each with its demo thumbnail. Tapping one switches the page.
+- The back button returns to the page you came from (`gymmaxx.exerciseFrom`).
+
+**Entry points:**
+- **วันนี้ (Today):** tap an exercise photo (▶ badge), or ⋯ → "ดูท่าสาธิตและวิธีทำ" (see the demo and how-to).
+- **Workout player:**
+  - In the overview, a ▶ on each thumbnail opens the demo.
+  - While logging, the "▶ ดูท่าสาธิต" (see demo) button opens it.
+  - The demo is a bottom sheet over the workout (frames, steps, do/avoid, "เข้าใจแล้ว ทำต่อ" got it, continue), so the timer and logged sets are kept.
+- **แผนของฉัน (My plan):** the edit sheet for an exercise starts with "ดูท่าสาธิตและวิธีทำ".
+- **คลังท่า (exercise library):**
+  - All catalog exercises, grouped by muscle, each with its demo thumbnail.
+  - The header says "37 ท่า · ทุกท่ามีภาพสาธิตและวิธีทำ" (37 exercises · every one has a demo and how-to).
+  - Muscle counts are real.
 
 ### 10.1 Direction
 
