@@ -266,7 +266,7 @@ After prototype review the UI moves to **iOS-native patterns** (Human Interface 
   - **the "2X" figure is a placeholder. Before launch, back it with our own data (e.g. score gain per week for active users vs a baseline) or replace it with a claim we can prove. App Store rules and Thai consumer-protection advertising rules require that.**
 - **Option rows:** an icon, a title and a one-line description, with a radio on the right. The whole row turns solid blue when selected. The Continue pill stays disabled until the user picks. Goals use plain words, not jargon: "ลดพุง ลดไขมัน" (lose belly, lose fat), "เพิ่มกล้าม ตัวใหญ่ขึ้น" (build muscle, get bigger), "ลดไขมัน และเพิ่มกล้าม" (lose fat and build muscle), "แข็งแรงขึ้น สุขภาพดี" (get stronger, be healthier). The plan for that goal is called "แผนฟิตหุ่นของ…" (…'s fit-body plan).
 - **Equipment:** **real photos** in a list, grouped like a gym is laid out: small weights · bars & plates · benches & racks · cables & machines · bands. Group names are large bold headers. Each row shows a square **equipment-only image** (just the item on a light tile, no person, like Fitbod; the prototype uses the SVG illustrations in `design/equipment/`), the Thai name, the English name with a one-line explanation, and a checkbox. Tabs: ยอดนิยม (popular) / ทั้งหมด (all) / เลือกแล้ว (selected), plus "select all" per group. A **"ค้นหาอุปกรณ์" (search equipment)** pill sits above the Continue button, like Fitbod. It opens a full-screen search with a text field and a category list (icon, name, how many are selected, chevron). Tapping a category opens its items with "select all". Typing matches Thai names, English names and nicknames (e.g. "bench", "ดัมเบล", "lat pulldown"). If nothing matches, it suggests trying the English name or browsing by category. Next to search, **"ไม่แน่ใจ? เลือกให้" (not sure? pick for me)** fills in the popular set for where they train and moves on. At a gym that's most machines, at home it's dumbbells and a band. The plan screen then says the equipment was picked for them and can be changed in the profile. Gym users start with everything ticked; home users start empty.
-- **Main app tabs:** a **floating pill tab bar** (inset 12 px from the screen edges, 18 px from the bottom) holding หน้าแรก (Home) · ฝึก (Train) · อาหาร (Food) · ผลสแกน (Scan results, same word as that screen's title). The selected tab gets a soft filled pill. **Scan is a separate round 64 px button to the right of the pill**, so it's always one tap away. The profile sits behind the avatar on Home.
+- **Main app tabs:** a **floating pill tab bar** (inset 12 px from the screen edges, 18 px from the bottom) holding วันนี้ (Today) · แผน (Plan) · อาหาร (Food) · ผลสแกน (Scan results, same word as that screen's title). The selected tab gets a soft filled pill. **Scan is a separate round 64 px button to the right of the pill**, so it's always one tap away. The profile sits behind the avatar on Home.
 - **Theme:** dark is the default. Every screen also supports light (Cal AI-like: off-white `#F4F3F7` ground, white cards with a soft shadow, near-black text, a black scan button) through the same tokens (`.gx.light`). Users pick มืด (dark) / สว่าง (light) / ตามเครื่อง (follow phone) in Profile, and the choice applies everywhere at once. The camera always stays dark.
 - **Home, top to bottom:**
   - GymMaxx wordmark + **streak pill** (flame + days). Tapping it opens a streak sheet with this week's flames, the best streak, and the rule: train or log food once a day.
@@ -376,6 +376,40 @@ Adopted after reviewing their store pages and reviews. Human coaches and communi
   - flagged values don't count as a best until confirmed
   - logged sets reopen with a tap on their ✓ in the workout
   - the Summary has "แก้ไข" (edit) per exercise: steppers and delete per set; charts recalculate
+
+### 10.0d v2 structure: "today's plan" first (Oct 2026, replaces the earlier Home and Train layouts)
+
+Core job: open the app and know which exercises, how many sets × reps, what weight, what equipment and what time to go to the gym, then repeat a locked plan every week.
+
+- **วันนี้ (Today, Home):**
+  - greeting, streak pill (opens streak sheet with freeze/pause), avatar → Profile; no date
+  - orange "เข้ายิม 18:00 · อีก 2 ชม. 15 นาที · เตือนก่อน 30 นาที" (gym at 18:00 · 2 h 15 min to go · reminder 30 min before) bar
+  - **today's plan card:**
+    - day title, exercise/set/minute counts, and a 🔒 badge when locked
+    - "ต้องใช้" (needs): equipment photos for the day ("ไม่ต้องใช้อุปกรณ์" when none)
+    - first 3 exercises (photo · name · "4 เซ็ต × 8 ครั้ง · 40 กก." · weak-spot tag), with "ดูอีก N ท่า" (see N more)
+    - big start button, plus "ปรับวันนี้" (adjust today) / "แก้แผน" (edit plan)
+  - food card with only 2 bars (calories, protein + "ขาดอีก X ก.", short X g)
+  - tomorrow row ("พรุ่งนี้ · วันพัก", tomorrow · rest day)
+  - first day only: a notification card
+  - **"ปรับวันนี้" changes the actual list:** trims to the time (20/30/45/60 → 3/4/6/7 exercises), swaps exercises for "แค่ดัมเบล / ไม่มีเลย" (dumbbells only / none), drops sore muscle groups and tops up from another planned day
+- **แผน (Plan, "แผนของฉัน", My plan):**
+  - [✨ AI จัดให้ | ✍️ ฉันจัดเอง] (AI plans it | I plan it)
+  - day tabs จ–อา (Mon–Sun; blue dot = training day)
+  - per day:
+    - title + ⏰ gym time chip (06:00–21:00; reminder 30 min before)
+    - equipment photos
+    - numbered exercise list; tap an exercise to edit sets / reps / kg, move up/down or delete
+    - "+ เพิ่มท่า" (add exercise), filtered to owned equipment
+    - one recovery line opening the full recovery sheet (body maps + % bars)
+  - **🔒 lock the day:** same exercises every week; full sets mean +2.5 kg next time, otherwise the weight stays
+  - rest days show 🛌 with "เปลี่ยนเป็นวันฝึก" (make it a training day)
+  - edits sync live to Today
+  - the exercise library is its own screen, from the grid icon
+- **อาหาร (Food):**
+  - top card: calories eaten / target with "ต้องกินอีก / เหลือ" (still to eat / left), protein bar with "ขาด X ก." (short X g); carbs/fat behind "ดูคาร์บ/ไขมัน" (show carbs/fat); one 💡 tip
+  - then 4 meal cards (🌅 เช้า breakfast · ☀️ กลางวัน lunch · 🌙 เย็น dinner · 🍌 ของว่าง snacks), each with a kcal subtotal and "+ เพิ่ม" (add)
+  - add opens search, recent and favourites into that meal, with "📷 สแกนแทน" (scan instead); tap a logged item to change the portion or delete it
 
 ### 10.1 Direction
 
