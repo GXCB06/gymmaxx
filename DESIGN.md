@@ -437,6 +437,30 @@ Core job: open the app and know which exercises, how many sets × reps, what wei
   - examples: สตรีค 7 วัน (7-day streak), ยกหนักขึ้นครั้งแรก (first heavier lift), สแกน 3 ครั้ง (3 scans), โปรตีนครบ 7 วัน (protein target 7 days), ฝึกครบ 20 ครั้ง (20 workouts), สตรีค 30 วัน (30-day streak), จุดอ่อนขึ้น 10 (weak spot +10), คะแนนรวม 70 (overall score 70)
   - tap a badge to see how to earn it and the date earned, or current progress (e.g. 11/20)
 
+### 10.0f Mockup: Fitbod-style วันนี้ (Today) page (proposal, not yet approved)
+
+The canvas board is `HomeFitbod`. The current Home stays until this is approved.
+
+- **Header:** avatar + "แผนฟิตหุ่นของต้น ›" (Ton's fitness plan, links to Plan), and the streak pill on the right. No dates.
+- **Title block:**
+  - "เวิร์กเอาต์วันนี้ · 🔒 ล็อกแล้ว" (today's workout · locked), or "· ปรับแล้ว" (· adjusted) once changed
+  - big day title, e.g. "อก + ไหล่" (chest + shoulders)
+  - "6 ท่า · 3 กล้าม · ~53 นาที" (6 exercises · 3 muscles · ~53 min)
+  - a "สลับ" (switch) button and a "⋯" menu
+- **Dropdown chips:** "⏱ 45 นาที ▾" (time), "🏋️ ยิมใหญ่ ▾" (equipment: full gym / dumbbells only / none) and "💪 ไม่เมื่อย ▾" (soreness, multi-select). Each opens its own small sheet and applies immediately. These replace the old "ปรับวันนี้" (adjust today) sheet.
+- **Gym-time card** (like Fitbod's calibration card): "เข้ายิมวันนี้ 18:00 · อีก 2 ชม. 15 นาที" (gym today 18:00 · in 2 h 15 min) with a reminder toggle.
+- **Full exercise list** with a connecting line:
+  - each row has a photo with a small muscle figure, an eyebrow ("ท่าหลัก" main lift, or "เน้นจุดอ่อน · ไหล่" weak spot · shoulders, in orange), the name, and "4 เซ็ต · 8 ครั้ง · 40 กก." (4 sets · 8 reps · 40 kg)
+  - "⋯" per row offers: เปลี่ยนเป็น <alternative> (swap for an alternative), ทำท่านี้ก่อน (do this first), ข้ามท่านี้วันนี้ (skip today), ดูวิธีทำ (how to)
+  - the list ends with a "+ เพิ่มท่า" (add exercise) row, suggesting the weak spot first, with a link to the library
+- **Sticky "เริ่มเวิร์กเอาต์" (start workout) button** above the tab bar.
+- **สลับเวิร์กเอาต์ (switch workout) sheet:**
+  - today's planned day, the other plan day, a Maxx suggestion (หลัง + แขน, back + arms) and ทั้งตัว (full body), each with a radio and a muscle figure
+  - other options: เลือกกล้ามเอง (pick muscles), จัดเวิร์กเอาต์เองตั้งแต่ต้น (build from scratch)
+- **"⋯" menu:** บันทึกเป็นเวิร์กเอาต์โปรด (save as favourite), แชร์ (share), ให้ Maxx จัดท่าใหม่ (let Maxx reshuffle), กลับไปตามแผนเดิม (back to the plan), แก้ในแผนของฉัน (edit in my plan).
+- **All changes are for today only;** the weekly plan is unchanged.
+- **Food and tomorrow cards are removed** so the page focuses on the workout. Food lives in its own tab.
+
 ### 10.1 Direction
 
 Dark, premium, energetic — the "maxxing" look users expect. Electric blue is the single action colour. Because AbMaxx also uses blue, GymMaxx sets itself apart through Thai copy, Thai male models at mixed fitness levels (not only shredded), rounded shapes and the Kanit display font.
