@@ -428,7 +428,11 @@ Core job: open the app and know which exercises, how many sets × reps, what wei
   3. **"แต่ละส่วน" (each zone), weakest first:** Fitbod-style rows with a muscle-highlight figure, name, status tag (ต้องเร่ง <60 needs work / กำลังพัฒนา 60–79 improving / ดีแล้ว 80+ good), bar, score and change since first scan; then a dashed "หลัง · ยังไม่มีคะแนน" (back · no score yet) row asking for a back photo; then the "how we calculate" link.
   4. "ความแข็งแรง" (strength): 3 tiles and the per-exercise chart with the outlier fix.
   5. "เทียบกับครั้งแรก" (compared with first scan): first vs now body maps, change list, share card.
-  - The streak and badge cards moved off this page (the streak lives on Today).
+  - The streak and badge cards moved off this page: the streak lives on Today, and badges live in Profile.
+- **Badges (Profile → "เหรียญของฉัน", my badges, "3 จาก 8", 3 of 8):**
+  - a 4-column grid; earned badges are in colour with an orange ring, locked ones grey
+  - examples: สตรีค 7 วัน (7-day streak), ยกหนักขึ้นครั้งแรก (first heavier lift), สแกน 3 ครั้ง (3 scans), โปรตีนครบ 7 วัน (protein target 7 days), ฝึกครบ 20 ครั้ง (20 workouts), สตรีค 30 วัน (30-day streak), จุดอ่อนขึ้น 10 (weak spot +10), คะแนนรวม 70 (overall score 70)
+  - tap a badge to see how to earn it and the date earned, or current progress (e.g. 11/20)
 
 ### 10.1 Direction
 
