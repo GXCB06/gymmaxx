@@ -395,7 +395,7 @@ Core job: open the app and know which exercises, how many sets × reps, what wei
   - **"ปรับวันนี้" changes the actual list:** trims to the time (20/30/45/60 → 3/4/6/7 exercises), swaps exercises for "แค่ดัมเบล / ไม่มีเลย" (dumbbells only / none), drops sore muscle groups and tops up from another planned day
 - **แผน (Plan, "แผนของฉัน", My plan):**
   - [✨ AI จัดให้ | ✍️ ฉันจัดเอง] (AI plans it | I plan it)
-  - day tabs จ–อา (Mon–Sun; blue dot = training day)
+  - day tabs จ–อา (Mon–Sun) show **weekday + that day's focus, never calendar dates**, because the plan repeats every week (e.g. จ ขา · อ พัก · พ หลัง · พฤ อก: Mon legs, Tue rest, Wed back, Thu chest). Training days are blue, rest days grey, and a dot marks today
   - per day:
     - title + ⏰ gym time chip (06:00–21:00; reminder 30 min before)
     - equipment photos
