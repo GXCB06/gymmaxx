@@ -551,6 +551,15 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
   - 🔖 เมนูที่บันทึกไว้ (saved dishes; opens it on "เมนูโปรด", favourites)
 - Barcode stays available from the camera's mode switcher.
 
+### 10.0i Quick light/dark switch (Oct 2026)
+
+- **Where:** the วันนี้ (Today), แผน (Plan), อาหาร (Food) and ผลสแกน (scan results) headers each have a round ☀️/🌙 button next to the existing pill.
+  - ☀️ shows in dark mode (tap for light); 🌙 shows in light mode (tap for dark).
+- **Behaviour:**
+  - It writes `gymmaxx.theme`, so every open screen switches at once.
+  - Profile's มืด / สว่าง / ตามเครื่อง (dark / light / system) control stays for the full setting, including "follow the device".
+- **Camera:** the camera (ScanCam) stays dark on purpose.
+
 ### 10.1 Direction
 
 Dark, premium, energetic — the "maxxing" look users expect. Electric blue is the single action colour. Because AbMaxx also uses blue, GymMaxx sets itself apart through Thai copy, Thai male models at mixed fitness levels (not only shredded), rounded shapes and the Kanit display font.
