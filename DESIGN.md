@@ -439,6 +439,27 @@ Core job: open the app and know which exercises, how many sets × reps, what wei
 
 ### 10.0f Fitbod-style วันนี้ (Today) page (approved, Oct 2026)
 
+**Closer match to Fitbod's Workout tab (Oct 24, 2026):**
+- **Panel:** the workout sits on a raised panel with rounded top corners under the "แผนฟิตหุ่นของต้น ›" (Ton's fitness plan) header.
+- **Title area:** a big day title and "6 ท่า • 3 กล้าม • 🔒" (6 exercises • 3 muscles • locked), with a large "⇄ สลับ" (switch) pill and a blue ⋯.
+- **Chips:** only two, "45 นาที ▾" (45 min) and "ยิมใหญ่ ▾" (full gym). Soreness moved into the ⋯ menu.
+- **Exercise rows:**
+  - 72×92 portrait photo (▶ demo) with a cropped torso muscle badge overlapping its bottom-right corner, like Fitbod's
+  - an eyebrow (ท่าหลัก main lift / เน้นจุดอ่อน weak spot), then the name in 18px and "4 เซ็ต · 8 ครั้ง · 40 กก." (4 sets · 8 reps · 40 kg)
+  - a vertical line joins the photos; ⋯ on the right
+- **Add exercise:** a matching outlined box with + and "เพิ่มท่า" (add exercise).
+- **⋯ menu:** a plain list sheet with icons and dividers:
+  - บันทึกเวิร์กเอาต์ (save workout, shows ✓)
+  - แชร์ลิงก์เวิร์กเอาต์ (share workout link)
+  - เมื่อยตรงไหน? ให้ Maxx เลี่ยงให้ (where are you sore? Maxx works around it)
+  - ให้ Maxx จัดท่าใหม่ (refresh)
+  - กลับไปตามแผนเดิม (back to the original plan; only when changed)
+  - แก้ในแผนของฉัน (edit in My plan)
+- **สลับเวิร์กเอาต์ (switch workout) is now a full-screen page:**
+  - "ในแผนของคุณ" (in your plan): cards with a radio, the day name, its first exercise and a tag (วันนี้ตามแผน today's plan / Maxx แนะนำ Maxx suggests / มาได้น้อยสัปดาห์นี้ a light week), plus a body figure on the right. The selected card is lighter with its muscles in white.
+  - "ตัวเลือกอื่น" (other options): เลือกกล้ามเอง (pick muscles), เวิร์กเอาต์ที่บันทึกไว้ (saved workouts; restores the saved one), จัดเวิร์กเอาต์เองตั้งแต่ต้น (build from scratch).
+- Superset/circuit and import are not included yet.
+
 Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is the first-day version).
 
 - **Header:** avatar + "แผนฟิตหุ่นของต้น ›" (Ton's fitness plan, links to Plan), and the streak pill on the right. No dates.
