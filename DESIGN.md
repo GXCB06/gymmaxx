@@ -522,6 +522,35 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
   - **Search box** above the tabs matches Thai name, English name or equipment (e.g. "curl", "สควอท", "ดัมเบล"). It shows "พบ N ท่า" (N found) and an empty state when nothing matches.
   - Every row has its demo thumbnail and opens the demo page. On the demo page, "ท่าอื่นสำหรับ…" (other exercises for …) lists the rest of the same section.
 
+### 10.0h Cal AI-style อาหาร (Food) page and tile scan popup (Oct 2026)
+
+**Food page (modelled on Cal AI's home):**
+- **Header:** "อาหาร" (Food) + streak pill.
+- **Week strip:** ส–ศ (Sat–Fri) with dates 17–23.
+  - Logged days have a solid ring: green = within ±12% of target, orange = off target. Days with no log are dashed; the future day is faded.
+  - Today (พฤ 22, Thu 22) sits in a raised card.
+  - Tapping a past day shows that day's numbers and meals.
+- **Calories card:** a big number "1,240 แคลอรีที่เหลือ" (1,240 calories left) with a ring and a flame in the centre.
+  - Tap it to switch to "กินไป X จากเป้า Y" (eaten X of target Y).
+  - When over target the label reads "แคลอรีเกินเป้า" (over target) and the ring turns orange.
+- **Swipeable macro cards** (3 pages with dots; the dots are tappable too). Each card shows "X ที่เหลือ" (left), "ที่กินไป" (eaten) or "เกิน" (over), plus a ring and an icon:
+  1. โปรตีน / คาร์บ / ไขมัน (protein / carbs / fat; macro colours as before)
+  2. ไฟเบอร์ / น้ำตาล / โซเดียม (fiber / sugar / sodium; sodium matters for Thai food)
+  3. น้ำดื่ม (water, with a "+ 1 แก้ว" add-a-glass button) / เผาจากการฝึก (burned from workouts) / ก้าวเดิน (steps)
+- **"บันทึกวันนี้" (today's log), Cal AI's "Recently uploaded":**
+  - Cards with a plate image, name, time chip, 🔥 kcal, an "สแกน AI" (AI scan) tag, and P/C/F with coloured dots. Newest first; tap to edit.
+  - Empty state: "แตะ + เพื่อเพิ่มมื้อแรกของวัน" (tap + to add the first meal of the day).
+- The meal-group cards (เช้า/กลางวัน/เย็น/ของว่าง: breakfast/lunch/dinner/snack) and the tip were removed. The add, portion and edit sheets are unchanged.
+
+**Scan button popup (all tabs), modelled on Cal AI's + menu:**
+- The page blurs and dims, and the scan button turns into ✕.
+- Four large tiles sit above the tab bar:
+  - 📷 สแกนอาหาร (scan food)
+  - 🧍 สแกนร่างกาย (scan body; tag "ถึงรอบอีก 3 วัน", next scan due in 3 days)
+  - 🔍 ค้นหาเมนูอาหาร (search dishes; opens Food's add sheet on "ทั้งหมด", all)
+  - 🔖 เมนูที่บันทึกไว้ (saved dishes; opens it on "เมนูโปรด", favourites)
+- Barcode stays available from the camera's mode switcher.
+
 ### 10.1 Direction
 
 Dark, premium, energetic — the "maxxing" look users expect. Electric blue is the single action colour. Because AbMaxx also uses blue, GymMaxx sets itself apart through Thai copy, Thai male models at mixed fitness levels (not only shredded), rounded shapes and the Kanit display font.
