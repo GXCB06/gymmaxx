@@ -554,6 +554,7 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
 ### 10.0i Theme lives in settings only (Oct 2026)
 
 - **Setting:** light/dark is changed only in Profile → ธีม (theme): มืด / สว่าง / ตามเครื่อง (dark / light / follow the device).
+- **Getting to Profile & settings:** on วันนี้ (Today), the avatar (with a small ⚙️ badge) opens Profile. The "แผนฟิตหุ่นของต้น ›" (Ton's fitness plan) text next to it opens the plan. These were one link before, which left Profile unreachable after the Fitbod redesign.
 - **No header switch:** a quick ☀️/🌙 header button was tried and removed because it cluttered the tab headers.
 - **Sync:** every screen listens for the setting, so changing it in Profile updates all open screens.
 
