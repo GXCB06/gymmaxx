@@ -448,7 +448,7 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
   - "6 ท่า · 3 กล้าม · ~53 นาที" (6 exercises · 3 muscles · ~53 min)
   - a "สลับ" (switch) button and a "⋯" menu
 - **Dropdown chips:** "⏱ 45 นาที ▾" (time), "🏋️ ยิมใหญ่ ▾" (equipment: full gym / dumbbells only / none) and "💪 ไม่เมื่อย ▾" (soreness, multi-select). Each opens its own small sheet and applies immediately. These replace the old "ปรับวันนี้" (adjust today) sheet.
-- **Gym-time card** (like Fitbod's calibration card): "เข้ายิมวันนี้ 18:00 · อีก 2 ชม. 15 นาที" (gym today 18:00 · in 2 h 15 min) with a reminder toggle.
+- **No gym-time card** on Today (removed as clutter). The gym time and its reminder are set in แผนของฉัน (My plan), and the reminder arrives as a notification.
 - **Full exercise list** with a connecting line:
   - each row has a photo with a small muscle figure, an eyebrow ("ท่าหลัก" main lift, or "เน้นจุดอ่อน · ไหล่" weak spot · shoulders, in orange), the name, and "4 เซ็ต · 8 ครั้ง · 40 กก." (4 sets · 8 reps · 40 kg)
   - "⋯" per row offers: เปลี่ยนเป็น <alternative> (swap for an alternative), ทำท่านี้ก่อน (do this first), ข้ามท่านี้วันนี้ (skip today), ดูวิธีทำ (how to)
