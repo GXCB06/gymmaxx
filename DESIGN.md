@@ -550,6 +550,7 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
   - 🔍 ค้นหาเมนูอาหาร (search dishes; opens Food's add sheet on "ทั้งหมด", all)
   - 🔖 เมนูที่บันทึกไว้ (saved dishes; opens it on "เมนูโปรด", favourites)
 - Barcode stays available from the camera's mode switcher.
+- Tile icons are monochrome line icons, not emoji, for a minimal look: scan frame, person, magnifier, bookmark. They are black in light mode and white in dark. The "ถึงรอบอีก 3 วัน" (next scan in 3 days) tag is neutral grey.
 
 ### 10.0i Theme lives in settings only (Oct 2026)
 
