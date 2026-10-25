@@ -559,6 +559,18 @@ Approved, and it has replaced the old Home (canvas board `Home`; `HomeNew` is th
 - **No header switch:** a quick ☀️/🌙 header button was tried and removed because it cluttered the tab headers.
 - **Sync:** every screen listens for the setting, so changing it in Profile updates all open screens.
 
+### 10.0j Icons, not emoji (Oct 2026)
+
+- **Rule:** the UI uses monochrome line icons (24px grid, 2px stroke, round caps, `currentColor`) instead of emoji, for a minimal look.
+  - The only emoji kept is the streak 🔥 in the streak sheet and week strip.
+  - The streak pill already uses a flame icon.
+- **Replaced:**
+  - lock, snowflake (streak freeze), pause/play, dumbbell, camera, target, pencil, check/square, star, link, shuffle, plus/minus, search, swap, arrow-up, sparkles (AI), clock (gym time), bed (rest day), activity, trend, utensils, speaker, image, wifi, bulb, frame, hand, shirt
+  - Food macro icons: egg = protein, wheat = carbs, avocado = fat, leaf = fiber, cube = sugar, salt = sodium, drop = water, dumbbell = workout, steps.
+  - Profile badges: flame, dumbbell, camera, meat, activity, flame, target, trend. Earned badges are orange; locked ones grey.
+- **Labels:** text prefixes like "✨ AI ดูเอง" (AI decides), "⏱ 3 วิ" (3 s), "🐢 ช้าลง" (slower), "💪 ไม่เมื่อย" (not sore) now read as plain text: "AI ดูเอง", "3 วิ", "ช้าลง 0.5×", "ไม่เมื่อย".
+- **Typographic marks** (✓ ✕ ★ ☆) stay because they render as text, not colour emoji.
+
 ### 10.1 Direction
 
 Dark, premium, energetic — the "maxxing" look users expect. Electric blue is the single action colour. Because AbMaxx also uses blue, GymMaxx sets itself apart through Thai copy, Thai male models at mixed fitness levels (not only shredded), rounded shapes and the Kanit display font.
